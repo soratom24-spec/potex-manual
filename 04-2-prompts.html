@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04-2 プロンプト集｜POTEXマニュアル</title>
+  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="common.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="header-logo-link">
+      <img src="logo.png" alt="POTEX" class="header-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='inline';">
+      <span class="header-logo-fallback" style="display:none;font-weight:700;font-size:1.1rem;">POTEX</span>
+    </a>
+    <span class="header-title"><span class="header-title-num">04-2</span>| プロンプト集</span>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <nav>
+        <a href="index.html" class="nav-link">トップ</a>
+        <a href="01-potex.html" class="nav-link">01 | POTEXとは</a>
+        <a href="01-1-vision.html" class="nav-link nav-link-sub">01-1 ビジョン・理念</a>
+        <a href="01-2-service.html" class="nav-link nav-link-sub">01-2 SDP・サービス内容</a>
+        <a href="01-3-target.html" class="nav-link nav-link-sub">01-3 ターゲット層</a>
+        <a href="01-4-pricing.html" class="nav-link nav-link-sub">01-4 料金体系</a>
+        <a href="01-5-coaches.html" class="nav-link nav-link-sub">01-5 コーチ紹介</a>
+        <a href="02-marketing.html" class="nav-link">02 | マーケ</a>
+        <a href="02-1-channel.html" class="nav-link nav-link-sub">02-1 集客チャネル</a>
+        <a href="02-2-line.html" class="nav-link nav-link-sub">02-2 LINE運用</a>
+        <a href="02-3-funnel.html" class="nav-link nav-link-sub">02-3 ファネル設計</a>
+        <a href="02-4-kpi.html" class="nav-link nav-link-sub">02-4 KPI・効果測定</a>
+        <a href="03-sales.html" class="nav-link">03 | 営業</a>
+        <a href="03-0-principles.html" class="nav-link nav-link-sub">03-0 営業の原理原則</a>
+        <a href="03-1-process.html" class="nav-link nav-link-sub">03-1 営業プロセス</a>
+        <a href="03-6-sns-script.html" class="nav-link nav-link-sub">03-6 SNSスクリプト</a>
+        <a href="03-7-sdp-script.html" class="nav-link nav-link-sub">03-7 トークスクリプト</a>
+        <a href="04-ai.html" class="nav-link">04 | AIの活用</a>
+        <a href="04-1-tools.html" class="nav-link nav-link-sub">04-1 ツール一覧</a>
+        <a href="04-2-prompts.html" class="nav-link nav-link-sub active">04-2 プロンプト集</a>
+        <a href="04-3-automation.html" class="nav-link nav-link-sub">04-3 自動化事例</a>
+        <a href="05-other.html" class="nav-link">05 | その他</a>
+        <a href="05-1-faq.html" class="nav-link nav-link-sub">05-1 FAQ</a>
+        <a href="05-2-links.html" class="nav-link nav-link-sub">05-2 ツールリンク集</a>
+        <a href="05-3-videos.html" class="nav-link nav-link-sub">05-3 研修動画</a>
+        <a href="05-4-article.html" class="nav-link nav-link-sub">05-4 コンテンツ記事</a>
+        <a href="06-operations.html" class="nav-link">06 | 運営管理</a>
+        <a href="06-1-data-management.html" class="nav-link nav-link-sub">06-1 顧客・数値管理</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <p class="breadcrumb"><a href="index.html">トップ</a> &gt; <a href="04-ai.html">04 AIの活用</a> &gt; 04-2 プロンプト集</p>
+
+      <div class="hero-passion">
+        <p class="slogan-sub">PROMPTS</p>
+        <h1 class="slogan-main">再現できるプロンプトを持つ。</h1>
+      </div>
+
+      <section class="section">
+        <h2>LINE配信文作成プロンプト</h2>
+        <p style="margin-bottom:16px;color:var(--gray-text);">Claude（claude.ai）に貼り付けて使用する。<code style="background:#f3f4f6;padding:2px 6px;border-radius:4px;font-size:0.85rem;">[ ]</code>の部分を実際の内容に書き換えること。</p>
+        <div class="script-box">あなたはPOTEXのLINEマーケターです。以下の条件でLINE配信文を3パターン作成してください。
+
+条件：
+- 文字数：200〜400文字
+- CTA：1つのみ（SDP体験申込み）
+- ターゲット：[ターゲット属性を入力]
+- テーマ：[配信テーマを入力]
+- 禁止：「絶対に成功します」「いかがでしたでしょうか」「簡単に稼げる」
+- トーン：POTEXらしく直接的・断言型、カジュアルと丁寧の中間</div>
+      </section>
+
+      <section class="section">
+        <h2>面談後フォローDM作成プロンプト</h2>
+        <p style="margin-bottom:16px;color:var(--gray-text);">面談直後に使用。tldvの文字起こしや自分のメモをもとに情報を入力する。</p>
+        <div class="script-box">以下の面談メモをもとに、フォローDMを作成してください。
+- 相手のプロフィール：[職業・現在の悩み・目標]
+- 面談で出た課題：[具体的な内容]
+- 次のアクション：[SDP申込み / 日程調整 / 資料送付]
+トーン：丁寧かつフレンドリー、押しつけがましくない。200文字以内。</div>
+      </section>
+
+      <section class="section">
+        <h2>tldv文字起こし → 議事録変換プロンプト</h2>
+        <p style="margin-bottom:16px;color:var(--gray-text);">tldvで録画→文字起こしを取得後、以下のプロンプトとセットでClaudeに貼り付ける。</p>
+        <div class="script-box">以下はZoom面談の文字起こしです。以下の形式で議事録を作成してください。
+
+【フォーマット】
+■ 相手のプロフィール（職業・現状・悩み）
+■ ヒアリングで判明した課題（箇条書き）
+■ 提案内容
+■ 次のアクション（誰が・何を・いつまでに）
+
+[文字起こしをここに貼り付け]</div>
+      </section>
+
+      <section class="section">
+        <h2>シナリオ配信文一括生成プロンプト</h2>
+        <p style="margin-bottom:16px;color:var(--gray-text);">新規LINE登録者向けのシナリオ配信文をまとめて作成する際に使用。</p>
+        <div class="script-box">POTEXのLINEシナリオ配信文を作成してください。
+対象：LINE新規登録者（[ターゲット属性]）
+期間：Day0〜Day14の配信文を各200〜300文字で作成
+各Dayの方針：
+- Day0：歓迎＋SDPの紹介
+- Day3：自己管理に関するヒント提供
+- Day7：SDPへの再案内
+- Day14：継続利用の提案
+CTA：全てSDPの体験申込みへ</div>
+      </section>
+
+      <div class="highlight-box">
+        プロンプトはチームの共有資産。うまくいったパターンはこのページに追加していく。新しいプロンプトを作ったらSlackで共有し、担当者がここに追記する。
+      </div>
+
+      <div class="next-steps">
+        <a href="04-1-tools.html">← 04-1 ツール一覧</a>
+        <a href="04-3-automation.html">04-3 自動化事例 →</a>
+      </div>
+
+      <footer class="footer">
+        <p>POTEXマニュアル｜社外秘</p>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

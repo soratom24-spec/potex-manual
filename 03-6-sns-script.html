@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03-6 SNSスクリプト｜POTEXマニュアル</title>
+  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="common.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="header-logo-link">
+      <img src="logo.png" alt="POTEX" class="header-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='inline';">
+      <span class="header-logo-fallback" style="display:none;font-weight:700;font-size:1.1rem;">POTEX</span>
+    </a>
+    <span class="header-title"><span class="header-title-num">03-6</span>| SNSスクリプト</span>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <nav>
+        <a href="index.html" class="nav-link">トップ</a>
+        <a href="01-potex.html" class="nav-link">01 | POTEXとは</a>
+        <a href="01-1-vision.html" class="nav-link nav-link-sub">01-1 ビジョン・理念</a>
+        <a href="01-2-service.html" class="nav-link nav-link-sub">01-2 SDP・サービス内容</a>
+        <a href="01-3-target.html" class="nav-link nav-link-sub">01-3 ターゲット層</a>
+        <a href="01-4-pricing.html" class="nav-link nav-link-sub">01-4 料金体系</a>
+        <a href="01-5-coaches.html" class="nav-link nav-link-sub">01-5 コーチ紹介</a>
+        <a href="02-marketing.html" class="nav-link">02 | マーケ</a>
+        <a href="02-1-channel.html" class="nav-link nav-link-sub">02-1 集客チャネル</a>
+        <a href="02-2-line.html" class="nav-link nav-link-sub">02-2 LINE運用</a>
+        <a href="02-3-funnel.html" class="nav-link nav-link-sub">02-3 ファネル設計</a>
+        <a href="02-4-kpi.html" class="nav-link nav-link-sub">02-4 KPI・効果測定</a>
+        <a href="03-sales.html" class="nav-link">03 | 営業</a>
+        <a href="03-0-principles.html" class="nav-link nav-link-sub">03-0 営業の原理原則</a>
+        <a href="03-1-process.html" class="nav-link nav-link-sub">03-1 営業プロセス</a>
+        <a href="03-6-sns-script.html" class="nav-link nav-link-sub active">03-6 SNSスクリプト</a>
+        <a href="04-ai.html" class="nav-link">04 | AIの活用</a>
+        <a href="04-1-tools.html" class="nav-link nav-link-sub">04-1 ツール一覧</a>
+        <a href="04-2-prompts.html" class="nav-link nav-link-sub">04-2 プロンプト集</a>
+        <a href="04-3-automation.html" class="nav-link nav-link-sub">04-3 自動化事例</a>
+        <a href="05-other.html" class="nav-link">05 | その他</a>
+        <a href="05-1-faq.html" class="nav-link nav-link-sub">05-1 FAQ</a>
+        <a href="05-2-links.html" class="nav-link nav-link-sub">05-2 ツールリンク集</a>
+        <a href="05-3-videos.html" class="nav-link nav-link-sub">05-3 研修動画</a>
+        <a href="05-4-article.html" class="nav-link nav-link-sub">05-4 コンテンツ記事</a>
+        <a href="06-operations.html" class="nav-link">06 | 運営管理</a>
+        <a href="06-1-data-management.html" class="nav-link nav-link-sub">06-1 顧客・数値管理</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <p class="breadcrumb"><a href="index.html">トップ</a> &gt; <a href="03-sales.html">03 営業</a> &gt; 03-6 SNSスクリプト</p>
+
+      <div class="hero-passion">
+        <p class="slogan-sub">SNS SCRIPTS</p>
+        <h1 class="slogan-main">SNSで売る言葉を持つ。</h1>
+        <p class="hero-lead">
+          他社との違いを明確にし、属性別の刺さる訴求を持つ。<br>
+          競合比較から差別化言語まで、SNSコーチング営業の型を記録する。
+        </p>
+      </div>
+
+      <section class="section">
+        <p class="section-label">COMPETITIVE ANALYSIS</p>
+        <h2>他社・競合比較表</h2>
+        <div style="overflow-x:auto;">
+          <table style="width:100%;border-collapse:collapse;font-size:0.85rem;">
+            <thead>
+              <tr style="background:var(--accent-passion);color:#fff;">
+                <th style="padding:10px 12px;text-align:left;">サービス名</th>
+                <th style="padding:10px 12px;text-align:left;">タイプ</th>
+                <th style="padding:10px 12px;text-align:left;">料金</th>
+                <th style="padding:10px 12px;text-align:left;">期間</th>
+                <th style="padding:10px 12px;text-align:left;">主な内容</th>
+                <th style="padding:10px 12px;text-align:left;">特徴</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:10px 12px;font-weight:600;">SnsClub</td>
+                <td style="padding:10px 12px;">スクール型</td>
+                <td style="padding:10px 12px;">24.8万〜54.8万円＋入会金5万</td>
+                <td style="padding:10px 12px;">最大6か月</td>
+                <td style="padding:10px 12px;">Instagram運用 / 商品設計 / マネタイズ</td>
+                <td style="padding:10px 12px;">女性向け多い・王道モデル</td>
+              </tr>
+              <tr style="border-bottom:1px solid var(--border);background:var(--bg-sub);">
+                <td style="padding:10px 12px;font-weight:600;">スキルスキップ</td>
+                <td style="padding:10px 12px;">スクール型</td>
+                <td style="padding:10px 12px;">59.5万〜99.5万円</td>
+                <td style="padding:10px 12px;">5〜9ヶ月</td>
+                <td style="padding:10px 12px;">SNSマーケ / 動画 / 案件獲得</td>
+                <td style="padding:10px 12px;">スキル＋収益化両方</td>
+              </tr>
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:10px 12px;font-weight:600;">Buzz College</td>
+                <td style="padding:10px 12px;">スクール型</td>
+                <td style="padding:10px 12px;">約30万〜80万円</td>
+                <td style="padding:10px 12px;">数ヶ月</td>
+                <td style="padding:10px 12px;">SNS運用 / 商品販売導線</td>
+                <td style="padding:10px 12px;">サブスク型あり</td>
+              </tr>
+              <tr style="border-bottom:1px solid var(--border);background:var(--bg-sub);">
+                <td style="padding:10px 12px;font-weight:600;">WEBCOACH</td>
+                <td style="padding:10px 12px;">スクール型</td>
+                <td style="padding:10px 12px;">約30万〜80万円</td>
+                <td style="padding:10px 12px;">数ヶ月</td>
+                <td style="padding:10px 12px;">SNS＋Webスキル</td>
+                <td style="padding:10px 12px;">副業寄り</td>
+              </tr>
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:10px 12px;font-weight:600;">ONEマーケ系</td>
+                <td style="padding:10px 12px;">スクール型</td>
+                <td style="padding:10px 12px;">月4万〜7万円</td>
+                <td style="padding:10px 12px;">数ヶ月</td>
+                <td style="padding:10px 12px;">SNSマーケ全般</td>
+                <td style="padding:10px 12px;">分割型が多い</td>
+              </tr>
+              <tr style="border-bottom:1px solid var(--border);background:var(--bg-sub);">
+                <td style="padding:10px 12px;font-weight:600;">SNSコーチング（法人）</td>
+                <td style="padding:10px 12px;">個別コーチング</td>
+                <td style="padding:10px 12px;">月10万〜50万円</td>
+                <td style="padding:10px 12px;">月額</td>
+                <td style="padding:10px 12px;">戦略設計 / KPI / 分析</td>
+                <td style="padding:10px 12px;">BtoB寄り・分析強い</td>
+              </tr>
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:10px 12px;font-weight:600;">S&Eパートナーズ</td>
+                <td style="padding:10px 12px;">コンサル型</td>
+                <td style="padding:10px 12px;">月3万〜40万円</td>
+                <td style="padding:10px 12px;">月額</td>
+                <td style="padding:10px 12px;">投稿添削 / 改善 / 分析</td>
+                <td style="padding:10px 12px;">投稿改善特化</td>
+              </tr>
+              <tr style="border-bottom:1px solid var(--border);background:var(--bg-sub);">
+                <td style="padding:10px 12px;font-weight:600;">エンコネ</td>
+                <td style="padding:10px 12px;">運用支援型</td>
+                <td style="padding:10px 12px;">約4万円〜/月</td>
+                <td style="padding:10px 12px;">月額</td>
+                <td style="padding:10px 12px;">投稿設計 / コンテンツ制作</td>
+                <td style="padding:10px 12px;">実務寄り</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section">
+        <p class="section-label">DIFFERENTIATION</p>
+        <h2>POTEXの差別化ポイント</h2>
+
+        <h3>SNSだけじゃない出口戦略</h3>
+        <p>アフィ・企業案件・運用代行・コミュニティ案件受注など、複数の収益形態をセットで提案できる。他社は「SNS運用スキルのみ」で終わることが多い。</p>
+        <p>POTEXのアフィはASPを通さない直受けのため、中抜き（約30%）なし。ASPに卸していないため、他では取れない案件になる。</p>
+
+        <h3>人生目的から逆算する設計</h3>
+        <p>「どんな自分になりたいか」から逆算して、SNSが最適な手段かどうかを一緒に確認する。スクール型は前提としてSNSありきになりがち。</p>
+
+        <h3>スポットコーチの質</h3>
+        <p>時給5万以上のコーチが関与。インプットもインプットを引き出すのも人生の全体感を、プロのコーチが見ながら設計する。AIには代替できない。</p>
+
+        <h3>コミュニティ内の受発注</h3>
+        <p>POTEXはSNSの割合が20%程度で経営者も多い。スクール型と違い、コミュニティ内で受発注が自然に生まれる環境がある。</p>
+      </section>
+
+      <section class="section">
+        <p class="section-label">TARGETED PITCHES</p>
+        <h2>属性別 刺さる訴求</h2>
+
+        <h3>① 一般訴求（全属性共通）</h3>
+        <ul>
+          <li>「ポテンシャルと素直さはある。方向性と環境を変えるだけ」</li>
+          <li>結果を出すスピード感 → 「やり続ければ結果は出る。そのしんどい期間を最短で一緒に通り抜けましょう」</li>
+          <li>もったいない感・基準値への怒り（「それだけの力があるのに」）</li>
+          <li>聞く体制が整っていない時は少し言葉を詰まらせて「凄そうな話をしそう」感を出す</li>
+          <li>情緒に触れるものを。数字だけでなく感情の動くエピソードを使う</li>
+        </ul>
+
+        <h3>② SNS分野の訴求</h3>
+        <ul>
+          <li>「SNSは決して簡単な道ではない」という前提を共有。他社の「AIがあれば簡単」訴求を否定しつつ、圧倒的な行動量が成果につながる世界観を伝える</li>
+          <li>「どんな自分になりたいか」から逆算して発信内容を設計。ただ稼ぐためではない</li>
+          <li>アカウント設計の重要性：「AIの力では難しいので、誰かに入ってもらった方が良い。プロのコーチが人生の全体感を見ながら設計する」</li>
+          <li>1年後に辞めている人が94%。YouTubeで1,000人超えているアカウントは全体の15%</li>
+          <li>スポットコーチの価値訴求：「時給5万以上の方が入っています」</li>
+          <li>応援される姿が大事：苦闘・葛藤・大きなビジョン・優しさ</li>
+        </ul>
+
+        <h3>③ スキルがまだない人への提案</h3>
+        <ul>
+          <li>「AIに取って代わられそうな時代の中で、もがきながら頑張っている過程」自体が発信テーマになる（プロセスマーケ）</li>
+          <li>没頭できるものを探ってそこからトーク展開（ゲーム・料理・趣味）</li>
+          <li>ゲームの解説動画：広告収益が高い。スマブラで2本100万回再生・月間40万達成の事例あり</li>
+          <li>TikTokライブの投げ銭・1いいねでこれやりますコンテンツ（投げ銭に近い）など初期で狙いやすいマネタイズ手段を提示</li>
+          <li>初月1万、次は5万、10万と段階的なゴール設定でモチベートする</li>
+          <li>スキル0の状態では、「理想の自分」と「SNSでの発信内容」を一致させて提案する</li>
+        </ul>
+
+        <h3>④ 覚悟を問う訴求</h3>
+        <div class="script-box">
+          「どれくらい変わりたいか」という覚悟を確認する。カーネル・サンダースの例のように、「何歳からでも変われる」というメッセージを伝える。1回聞いてできる人はいない。最初はどうせうまくいかない。大体の人は最初つまずく。それを一緒に乗り越える。
+        </div>
+
+        <h3>⑤ 欲しい能力の確認ポイント</h3>
+        <ul>
+          <li>自分なりにしっかり考えてきているか（考えてきた量が多い）→ 肯定する</li>
+          <li>「自分ならできる」と信じているか → その場で変えましょう！</li>
+          <li>時間を確保し、努力できる状態にあるか → 「本気で取り組める人にはしっかりサポートできる」と伝える</li>
+        </ul>
+
+        <h3>⑥ 法人向け訴求</h3>
+        <ul>
+          <li>CPAをいかに下げるかが勝負。バズが収益を生む</li>
+          <li>着座数・予約数それぞれのCPAと、契約時のCPO（Cost Per Order）を軸に見る</li>
+          <li>広告での直獲得とSNSの2軸でブレンデッドCPAとして評価してもらう</li>
+          <li>SNSはブランド認知から始まり、欲しいを生んで購入へつながる（コカコーラモデル）</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <p class="section-label">WINNING PATTERN</p>
+        <h2>有田さんの勝ちパターン（副業属性）</h2>
+
+        <ol>
+          <li>アイスブレイクで運用経験について話す</li>
+          <li>「なぜSNSをやりたいのか」→ SNSをやった先の未来（自由な時間・場所・好きなことを仕事に）を話す。本当にSNSでいいのかを確認し、他の副業手段も提示する</li>
+          <li>SNS運用の段階ロードマップを示す：1st アフィ → 2nd 運用代行・広告強化 → 3rd 自社事業（アパレル・バー・コスメ等）</li>
+          <li>継続力の教育：1年後に辞めている人が94%。残り6%は「それだけをやっている人」。継続に必要なのは環境（強制力）と正しい方向性・知識</li>
+          <li>POTEXの優位性：スポットコーチ（有田さん・田原）・SNSツール・出口戦略（アフィ直受け）・コミュニティでの受発注</li>
+        </ol>
+
+        <div class="highlight-box">
+          <strong>媒体特性の前提知識として共有しておく</strong><br>
+          YT＝教育最強 / Insta＝商品販売最適 / TikTok＝バズりやすい（コンテンツ型） / X＝拡散性高 / LINE＝TikTok→IG→LINE→商品販売が基本の型
+        </div>
+      </section>
+
+      <section class="section">
+        <p class="section-label">FUNNEL DESIGN</p>
+        <h2>コンテンツ販売導線</h2>
+
+        <ol>
+          <li><strong>SNS発信</strong>：認知獲得。プロセスマーケを含め、「応援される姿」（苦闘・葛藤・大きなビジョン・優しさ）を発信する</li>
+          <li><strong>LINE / リスト獲得</strong>：SNSからLINEへ誘導。リスト化して継続的な接点を作る</li>
+          <li><strong>教育（価値提供）</strong>：週次で学びの録画を2本程度提供。金曜までにチャンネルで共有するなど定期的な接触を維持する</li>
+          <li><strong>個別相談 / 商品販売</strong>：温まったリストに対してクロージング。フィードバックを重ねながら収益を段階的に拡大する（初月1万→5万→10万）</li>
+        </ol>
+      </section>
+
+      <div class="next-steps">
+        <a href="03-1-process.html">← 03-1 営業プロセス に戻る</a><br>
+        <a href="03-7-sdp-script.html">03-7 トークスクリプト へ進む →</a>
+      </div>
+
+      <footer class="footer">
+        <p>POTEXマニュアル｜社外秘</p>
+        <p>最終更新: 2026-06-04</p>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>06-1 | 顧客・数値管理｜POTEXマニュアル</title>
+  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="common.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="header-logo-link">
+      <img src="logo.png" alt="POTEX" class="header-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='inline';">
+      <span class="header-logo-fallback" style="display:none;font-weight:700;font-size:1.1rem;">POTEX</span>
+    </a>
+    <span class="header-title"><span class="header-title-num">06-1</span>| 顧客・数値管理</span>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <nav>
+        <a href="index.html" class="nav-link">トップ</a>
+        <a href="01-potex.html" class="nav-link">01 | POTEXとは</a>
+        <a href="01-1-vision.html" class="nav-link nav-link-sub">01-1 ビジョン・理念</a>
+        <a href="01-2-service.html" class="nav-link nav-link-sub">01-2 SDP・サービス内容</a>
+        <a href="01-3-target.html" class="nav-link nav-link-sub">01-3 ターゲット層</a>
+        <a href="01-4-pricing.html" class="nav-link nav-link-sub">01-4 料金体系</a>
+        <a href="01-5-coaches.html" class="nav-link nav-link-sub">01-5 コーチ紹介</a>
+        <a href="02-marketing.html" class="nav-link">02 | マーケ</a>
+        <a href="02-1-channel.html" class="nav-link nav-link-sub">02-1 集客チャネル</a>
+        <a href="02-2-line.html" class="nav-link nav-link-sub">02-2 LINE運用</a>
+        <a href="02-3-funnel.html" class="nav-link nav-link-sub">02-3 ファネル設計</a>
+        <a href="02-4-kpi.html" class="nav-link nav-link-sub">02-4 KPI・効果測定</a>
+        <a href="03-sales.html" class="nav-link">03 | 営業</a>
+        <a href="03-0-principles.html" class="nav-link nav-link-sub">03-0 営業の原理原則</a>
+        <a href="03-1-process.html" class="nav-link nav-link-sub">03-1 営業プロセス</a>
+        <a href="03-6-sns-script.html" class="nav-link nav-link-sub">03-6 SNSスクリプト</a>
+        <a href="03-7-sdp-script.html" class="nav-link nav-link-sub">03-7 トークスクリプト</a>
+        <a href="04-ai.html" class="nav-link">04 | AIの活用</a>
+        <a href="04-1-tools.html" class="nav-link nav-link-sub">04-1 ツール一覧</a>
+        <a href="04-2-prompts.html" class="nav-link nav-link-sub">04-2 プロンプト集</a>
+        <a href="04-3-automation.html" class="nav-link nav-link-sub">04-3 自動化事例</a>
+        <a href="05-other.html" class="nav-link">05 | その他</a>
+        <a href="05-1-faq.html" class="nav-link nav-link-sub">05-1 FAQ</a>
+        <a href="05-2-links.html" class="nav-link nav-link-sub">05-2 ツールリンク集</a>
+        <a href="05-3-videos.html" class="nav-link nav-link-sub">05-3 研修動画</a>
+        <a href="05-4-article.html" class="nav-link nav-link-sub">05-4 コンテンツ記事</a>
+        <a href="06-operations.html" class="nav-link">06 | 運営管理</a>
+        <a href="06-1-data-management.html" class="nav-link nav-link-sub active">06-1 顧客・数値管理</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <p class="breadcrumb"><a href="index.html">トップ</a> &gt; <a href="06-operations.html">06 運営管理</a> &gt; 06-1 顧客・数値管理</p>
+
+      <div class="hero-passion">
+        <p class="slogan-sub">DATA MANAGEMENT</p>
+        <h1 class="slogan-main">数値が合わない時は、手順通りに。</h1>
+      </div>
+
+      <!-- 1. 全体像 -->
+      <section class="section">
+        <h2>1. 全体像と使うツール</h2>
+        <p style="margin-bottom:16px;">このマニュアルは、POTEXの顧客管理・面談管理・着金管理・数値管理を迷わず運用するためのものです。</p>
+
+        <div class="highlight-box" style="margin-bottom:24px;">
+          <strong>まず覚えること3つ</strong><br>
+          1. Slackで報告された内容は、必ず該当シートに反映する。<br>
+          2. 面談結果は、面談管理シートとLSTEPの両方を更新する。<br>
+          3. 数値が合わない時は、3章の確認順に沿って、LSTEPタグ・CSV更新・Slack報告未反映を先に確認する。
+        </div>
+
+        <div class="highlight-box warning" style="margin-bottom:24px;">
+          <strong>基本の流れ</strong><br>
+          LSTEP予約・タグ / Slack報告 → 面談管理・着金記録・受講者管理 → 数値管理シート
+        </div>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr><th>ツール / シート</th><th>主な用途</th><th>注意点</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>LSTEP</strong></td>
+                <td>LINE顧客情報、予約管理、タグ管理、顧客ID確認</td>
+                <td>タグ漏れがあると数値が合わなくなる</td>
+              </tr>
+              <tr>
+                <td><strong>Slack</strong></td>
+                <td>CS・営業・コーチ・運営間の報告、リマインド、着金報告</td>
+                <td>報告内容をシートに反映する必要がある</td>
+              </tr>
+              <tr>
+                <td><strong>TIMEREX</strong></td>
+                <td>一部面談の日程調整</td>
+                <td>TIMEREXで調整された面談はSlack報告とあわせて確認する</td>
+              </tr>
+              <tr>
+                <td><strong><a href="https://docs.google.com/spreadsheets/d/1B4HAYl4YpSL9lUzTGqJ4jBQTvuzEQ6qnbhOxG-oVgjY/edit?gid=0#gid=0" target="_blank">面談管理シート</a></strong></td>
+                <td>無料体験・再面談・営業結果の管理</td>
+                <td>Slack報告とLSTEP更新の両方を確認する</td>
+              </tr>
+              <tr>
+                <td><strong><a href="https://docs.google.com/spreadsheets/d/1w23fzkakvXodFie7vk_uu8uWIWLQ3MagIe22hd_ojEA/edit?gid=642937002#gid=642937002&range=A1" target="_blank">着金記録</a></strong></td>
+                <td>支払額・着金履歴の管理</td>
+                <td>着金履歴を残す</td>
+              </tr>
+              <tr>
+                <td><strong><a href="https://docs.google.com/spreadsheets/d/17fkrUdf-vS7tQ06lzR3LDp-PPsWSwajqPcB0vyRXOk4/edit?pli=1&gid=604061064#gid=604061064" target="_blank">受講者管理</a></strong></td>
+                <td>成約後の受講者情報、マッチング、AFS管理</td>
+                <td>入力漏れがよく発生</td>
+              </tr>
+              <tr>
+                <td><strong><a href="https://docs.google.com/spreadsheets/d/1w23fzkakvXodFie7vk_uu8uWIWLQ3MagIe22hd_ojEA/edit?gid=0#gid=0" target="_blank">数値管理シート</a></strong></td>
+                <td>経営・運営確認用の集計</td>
+                <td>元データの入力漏れに注意する</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="highlight-box warning">
+          数値管理シートや受講者管理などの自動計算セルを編集する場合は、参照範囲・集計条件を確認してから修正する。
+        </div>
+      </section>
+
+      <!-- 2. 業務手順 -->
+      <section class="section">
+        <h2>2. 各業務の手順</h2>
+
+        <h3 style="margin:24px 0 12px;font-size:1rem;font-weight:700;">2-1. 【予約時 / CS・営業】初回無料体験日程調整</h3>
+        <ol style="padding-left:20px;line-height:2;">
+          <li>LSTEP予約管理で顧客名、予約日時、担当営業を確認する。</li>
+          <li>LSTEPタグを追加する。</li>
+          <li>TIMEREXで日程調整された一部面談がある場合は、Slack報告とあわせて確認する。</li>
+        </ol>
+
+        <h3 style="margin:24px 0 12px;font-size:1rem;font-weight:700;">2-2. 【日中 / CS・運営】無料体験前日のリマインド</h3>
+        <ol style="padding-left:20px;line-height:2;">
+          <li>[CS] 日中に翌日の無料体験予約を確認し、顧客にLINE（LSTEP）でリマインドを送信する。</li>
+          <li>Slackの「営業_盛り上げグループ」に営業メンバー向け周知を投稿する。</li>
+          <li>面談管理シートに、顧客名・予約日時・担当営業・流入経路を記入する。</li>
+        </ol>
+
+        <h3 style="margin:24px 0 12px;font-size:1rem;font-weight:700;">2-3. 【面談後 / 営業・運営】無料体験後の営業報告</h3>
+        <ol style="padding-left:20px;line-height:2;">
+          <li>Slackの該当リマインド投稿へのコメントを確認する。</li>
+          <li>面談結果、担当者、面談日、ステータスを面談管理シートに反映する。</li>
+          <li>LSTEPのステータスタグ（成約／失注／再面談など）を追加する。</li>
+          <li>友だち情報の「成約日」「失注日」など、必要な日付項目を入力する。</li>
+          <li>成約時は、プランタグが追加されているか確認し、なければ追加する。</li>
+        </ol>
+
+        <h3 style="margin:24px 0 12px;font-size:1rem;font-weight:700;">2-4. 【着金後 / 運営】着金確認</h3>
+        <ol style="padding-left:20px;line-height:2;">
+          <li>Slackの着金報告を確認する。</li>
+          <li>着金記録に顧客ID、顧客名、今回の着金額、支払い方法、備考を入力する。</li>
+          <li>顧客IDはシートに検索用の関数があるため、本名から検索する。</li>
+          <li>分割支払いの場合は既存行を上書きせず、新しい1行として追加する。</li>
+        </ol>
+
+        <h3 style="margin:24px 0 12px;font-size:1rem;font-weight:700;">2-5. 【着金後〜面談前 / CS・コンシェルジュ・運営】成約後の受講者管理</h3>
+        <ol style="padding-left:20px;line-height:2;">
+          <li>着金確認後、原則コンシェルジュ面談前に受講者管理シートを更新する。</li>
+          <li>マッチング連絡日、顧客ドライブURL、プラン、担当者を入力する。</li>
+          <li>最終セッション完了見込は、マッチング連絡日とプランをもとに自動計算される。</li>
+        </ol>
+
+        <h3 style="margin:24px 0 12px;font-size:1rem;font-weight:700;">2-6. 【随時 / コーチ・AFS担当】AFS管理</h3>
+        <ol style="padding-left:20px;line-height:2;">
+          <li>Slackの「afs_マッチング部屋」を確認する。</li>
+          <li>AFS予定日とAFS結果を受講者管理に入力する。</li>
+          <li>Slack上で報告されていても、受講者管理に未反映の場合があるため照合する。</li>
+        </ol>
+
+        <h3 style="margin:24px 0 12px;font-size:1rem;font-weight:700;">2-7. 【随時 / コーチ・運営】継続プラン成約</h3>
+        <ol style="padding-left:20px;line-height:2;">
+          <li>継続プランが成約した場合は「継続プラン」タブに記入する。</li>
+          <li>成約日、顧客名、プラン内容、支払額、着金状況、担当者を確認する。</li>
+        </ol>
+
+        <h3 style="margin:24px 0 12px;font-size:1rem;font-weight:700;">2-8. 【数値確認前 / 運営】LSTEP CSV更新</h3>
+        <ol style="padding-left:20px;line-height:2;">
+          <li>LSTEPを開く。</li>
+          <li>「友だちリスト」へ移動する。</li>
+          <li>CSVエクスポートリストを開く。</li>
+          <li>「Potential X」と「RYU個別コーチング」をダウンロードする。</li>
+          <li>数値管理シートを開く。</li>
+          <li>「Potential X csv」「RYU個別コーチング csv」タブの既存貼付範囲にCSVをインポートする。</li>
+          <li>数値管理シートの集計結果を確認する。</li>
+        </ol>
+        <div class="highlight-box warning">
+          CSV更新を忘れると、LSTEP上では最新でも数値管理シートには反映されない。数値確認前には必ずCSVが最新か確認する。
+        </div>
+      </section>
+
+      <!-- 3. トラブル対応 -->
+      <section class="section">
+        <h2>3. 困った時の確認順</h2>
+
+        <h3 style="margin:0 0 12px;font-size:1rem;font-weight:700;">3-1. 数値が合わない時</h3>
+        <ol style="padding-left:20px;line-height:2;margin-bottom:24px;">
+          <li>LSTEPの完了タグ・成約/失注/再面談タグが正しいか確認する。</li>
+          <li>流入経路タグを確認する。リファラル経由の場合は4-1を参照する。</li>
+          <li>Potential X / RYU個別コーチングのCSVが最新か確認する。</li>
+          <li>面談管理シートのステータスが空白・報告なし・検討中のまま残っていないか確認する。</li>
+          <li>Slack報告が面談管理・着金記録・受講者管理に反映されているか確認する。</li>
+        </ol>
+
+        <h3 style="margin:0 0 12px;font-size:1rem;font-weight:700;">3-2. 起こりやすいミスと対処法</h3>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr><th>ミス</th><th>原因</th><th>対処法</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>成約数が少ない</td><td>LSTEP成約日タグ漏れ</td><td>LSTEPタグを確認して追加</td></tr>
+              <tr><td>面談数が合わない</td><td>面談管理シート未入力</td><td>Slack報告を確認して反映</td></tr>
+              <tr><td>売上が合わない</td><td>着金記録漏れ</td><td>Slack着金報告と照合</td></tr>
+              <tr><td>同じ顧客が重複している</td><td>両方の公式LINEに登録</td><td>本名・メールアドレス・予約日時で照合</td></tr>
+              <tr><td>分割支払いが反映されない</td><td>既存行を上書きした</td><td>分割分を新しい行で追加</td></tr>
+              <tr><td>AFS対応漏れ</td><td>Slack報告のみでシート未反映</td><td>afs_マッチング部屋と受講者管理を照合</td></tr>
+              <tr><td>ステータスが古い</td><td>営業報告後の更新漏れ</td><td>面談管理とLSTEPを更新</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 4. LSTEPタグ参考 -->
+      <section class="section">
+        <h2>4. 参考：LSTEPタグ・友だち情報</h2>
+
+        <h3 style="margin:0 0 12px;font-size:1rem;font-weight:700;">4-1. 流入経路タグ</h3>
+        <div class="table-wrapper" style="margin-bottom:24px;">
+          <table>
+            <thead>
+              <tr><th>タグ例</th><th>意味</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>YT_</strong></td><td>YouTube経由</td></tr>
+              <tr><td><strong>IG_</strong></td><td>Instagram経由</td></tr>
+              <tr><td><strong>PT_</strong></td><td>Potential X関連</td></tr>
+              <tr><td><strong>utm_</strong></td><td>LP経由</td></tr>
+              <tr><td><strong>なし</strong></td><td>リファラル経由の可能性（専用タグなし／流入経路が未記入の場合は予約情報・Slack報告で確認）</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 style="margin:0 0 12px;font-size:1rem;font-weight:700;">4-2. 主な完了タグ・ステータス</h3>
+        <div class="table-wrapper" style="margin-bottom:24px;">
+          <table>
+            <thead>
+              <tr><th>タグ・ステータス</th><th>意味</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>LINE追加済み</td><td>LINE登録済み</td></tr>
+              <tr><td>審査不合格・分母除外</td><td>集計対象外</td></tr>
+              <tr><td>日程調整済み</td><td>無料体験の日程が確定済み</td></tr>
+              <tr><td>体験キャンセル</td><td>無料体験がキャンセルされた</td></tr>
+              <tr><td>再面談</td><td>再面談・トスアップ予定</td></tr>
+              <tr><td>成約</td><td>契約成立</td></tr>
+              <tr><td>失注</td><td>契約に至らなかった</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 style="margin:0 0 12px;font-size:1rem;font-weight:700;">4-3. 主な友だち情報</h3>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr><th>項目</th><th>注意点</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>本名</td><td>データ照合に使用。ただし重複・表記ゆれに注意</td></tr>
+              <tr><td>メールアドレス</td><td>本人確認・照合に使用</td></tr>
+              <tr><td>目標達成したい内容</td><td>面談前確認に使用</td></tr>
+              <tr><td>コーチング体験日</td><td>面談管理と照合</td></tr>
+              <tr><td>コーチング体験キャンセル</td><td>ステータス反映忘れ注意</td></tr>
+              <tr><td>成約日</td><td>成約タグ・プランタグ・着金記録と照合</td></tr>
+              <tr><td>失注日</td><td>失注タグと照合</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 5. 引き継ぎチェックリスト -->
+      <section class="section">
+        <h2>5. 引き継ぎチェックリスト</h2>
+
+        <div class="grid-2">
+          <div class="card card-passion">
+            <div class="card-title">5-1. 権限・環境</div>
+            <ul style="list-style:none;padding:0;line-height:2.2;">
+              <li>☐ LSTEPのログイン・閲覧権限がある</li>
+              <li>☐ Slackの必要チャンネルに入っている<br><small>（営業_盛り上げグループ、afs_マッチング部屋 など）</small></li>
+              <li>☐ 面談管理シートを編集できる</li>
+              <li>☐ 着金記録を編集できる</li>
+              <li>☐ 受講者管理を編集できる</li>
+              <li>☐ 数値管理シートを編集できる</li>
+            </ul>
+          </div>
+          <div class="card card-passion">
+            <div class="card-title">5-2. 操作理解</div>
+            <ul style="list-style:none;padding:0;line-height:2.2;">
+              <li>☐ LSTEPタグの追加方法を理解している</li>
+              <li>☐ 顧客の検索方法を理解している</li>
+              <li>☐ Potential X / RYU個別コーチングCSVの更新方法を理解している</li>
+              <li>☐ 数値が合わない時の確認順を理解している</li>
+              <li>☐ 自動計算セルを直接編集する場合は、参照範囲・集計条件を確認することを理解している</li>
+              <li>☐ CSV貼付開始セル・範囲を実画面で確認した</li>
+            </ul>
+          </div>
+          <div class="card card-passion">
+            <div class="card-title">5-3. 日次チェック</div>
+            <ul style="list-style:none;padding:0;line-height:2.2;">
+              <li>☐ 翌日無料体験を確認した</li>
+              <li>☐ 顧客へのリマインドを送信した</li>
+              <li>☐ Slackに営業メンバー向け周知を投稿した</li>
+              <li>☐ 営業報告を面談管理シートとLSTEPに反映した</li>
+              <li>☐ 着金報告を着金記録に反映した</li>
+            </ul>
+          </div>
+          <div class="card card-passion">
+            <div class="card-title">5-4. 随時チェック</div>
+            <ul style="list-style:none;padding:0;line-height:2.2;">
+              <li>☐ 成約者を受講者管理・LSTEPタグに反映した</li>
+              <li>☐ AFS予定・結果を確認した</li>
+              <li>☐ 継続プラン成約時に該当タブへ記入した</li>
+              <li>☐ 数値確認前にCSVが最新か確認した</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="next-steps">
+        <a href="06-operations.html">← 06 運営管理へ戻る</a>
+      </div>
+
+      <footer class="footer">
+        <p>POTEXマニュアル｜社外秘</p>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
