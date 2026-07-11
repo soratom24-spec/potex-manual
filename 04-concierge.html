@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04 コンシェルジュ｜POTEXマニュアル</title>
+  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="common.css">
+  <style>
+    .manual-toc{background:#f6f8fb;border:1px solid #e3e7ee;border-radius:10px;padding:16px 20px;margin:20px 0;}
+    .manual-toc ol{margin:6px 0 0;padding-left:20px;}
+    .manual-toc li{margin:4px 0;}
+    .kvtable{border-collapse:collapse;margin:12px 0;width:100%;max-width:680px;font-size:.95rem;}
+    .kvtable th{background:#1f6feb;color:#fff;padding:8px 12px;text-align:left;}
+    .kvtable td{border:1px solid #e3e7ee;padding:8px 12px;}
+    .kvtable tr td:first-child{background:#f6f8fb;font-weight:700;white-space:nowrap;}
+    .callout{border-radius:10px;padding:14px 16px;margin:14px 0;font-size:.95rem;}
+    .callout .tag{font-weight:700;font-size:.8rem;display:block;margin-bottom:4px;}
+    .callout.warn{background:#fff5f5;border:1px solid #f0b4b4;}
+    .callout.warn .tag{color:#b12727;}
+    .callout.note{background:#f0f6ff;border:1px solid #bcd6ff;}
+    .callout.note .tag{color:#12508f;}
+    .script-box{background:#f6f8fb;border-left:3px solid #1f6feb;border-radius:0 8px 8px 0;padding:14px 18px;margin:12px 0;font-size:.95rem;}
+    .agenda{list-style:none;counter-reset:ag;padding-left:0;}
+    .agenda > li{counter-increment:ag;position:relative;padding-left:38px;margin:8px 0;}
+    .agenda > li::before{content:counter(ag);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;background:#1f6feb;color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+    .split2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:12px 0;}
+    .split2 .minicard{background:#f6f8fb;border:1px solid #e3e7ee;border-radius:10px;padding:14px 16px;}
+    .split2 .minicard h4{margin:0 0 6px;}
+    @media(max-width:700px){.split2{grid-template-columns:1fr;}}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="header-logo-link">
+      <img src="logo.png" alt="POTEX" class="header-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='inline';">
+      <span class="header-logo-fallback" style="display:none;font-weight:700;font-size:1.1rem;">POTEX</span>
+    </a>
+    <span class="header-title"><span class="header-title-num">04</span>| コンシェルジュ</span>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <nav>
+        <a href="index.html" class="nav-link">トップ</a>
+        <a href="01-potex.html" class="nav-link">01 | POTEXとは</a>
+        <a href="01-1-vision.html" class="nav-link nav-link-sub">01-1 ビジョン・理念</a>
+        <a href="01-2-service.html" class="nav-link nav-link-sub">01-2 SDP・サービス内容</a>
+        <a href="01-3-target.html" class="nav-link nav-link-sub">01-3 ターゲット層</a>
+        <a href="01-4-pricing.html" class="nav-link nav-link-sub">01-4 料金体系</a>
+        <a href="01-5-coaches.html" class="nav-link nav-link-sub">01-5 コーチ紹介</a>
+        <a href="02-marketing.html" class="nav-link">02 | マーケ</a>
+        <a href="02-1-channel.html" class="nav-link nav-link-sub">02-1 集客チャネル</a>
+        <a href="02-2-line.html" class="nav-link nav-link-sub">02-2 LINE運用</a>
+        <a href="02-3-funnel.html" class="nav-link nav-link-sub">02-3 ファネル設計</a>
+        <a href="02-4-kpi.html" class="nav-link nav-link-sub">02-4 KPI・効果測定</a>
+        <a href="03-sales.html" class="nav-link">03 | 営業</a>
+        <a href="03-8-sales-manual.html" class="nav-link nav-link-sub">03-0 セットアップ</a>
+        <a href="03-9-lifty.html" class="nav-link nav-link-sub">03-0-2 ライフティ（信販）</a>
+        <a href="03-0-principles.html" class="nav-link nav-link-sub">03-1 営業の原理原則</a>
+        <a href="03-1-process.html" class="nav-link nav-link-sub">03-2 営業プロセス</a>
+        <a href="03-7-sdp-script.html" class="nav-link nav-link-sub">03-3 トークスクリプト</a>
+        <a href="03-6-sns-script.html" class="nav-link nav-link-sub">03-4 SNSスクリプト</a>
+        <a href="04-concierge.html" class="nav-link active">04 | コンシェルジュ</a>
+        <a href="04-ai.html" class="nav-link">05 | AIの活用</a>
+        <a href="04-1-tools.html" class="nav-link nav-link-sub">05-1 ツール一覧</a>
+        <a href="04-2-prompts.html" class="nav-link nav-link-sub">05-2 プロンプト集</a>
+        <a href="04-3-automation.html" class="nav-link nav-link-sub">05-3 自動化事例</a>
+        <a href="05-other.html" class="nav-link">06 | その他</a>
+        <a href="05-1-faq.html" class="nav-link nav-link-sub">06-1 FAQ</a>
+        <a href="05-2-links.html" class="nav-link nav-link-sub">06-2 ツールリンク集</a>
+        <a href="05-3-videos.html" class="nav-link nav-link-sub">06-3 研修動画</a>
+        <a href="05-4-article.html" class="nav-link nav-link-sub">06-4 コンテンツ記事</a>
+        <a href="06-operations.html" class="nav-link">07 | 運営管理</a>
+        <a href="06-1-data-management.html" class="nav-link nav-link-sub">07-1 顧客・数値管理</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <p class="breadcrumb"><a href="index.html">トップ</a> &gt; 04 コンシェルジュ</p>
+
+      <div class="hero-passion">
+        <p class="slogan-sub">CONCIERGE MEETING</p>
+        <h1 class="slogan-main">最高の状態で、初回へ。</h1>
+        <p class="hero-lead">
+          成約から初回セッションまでの空白を埋め、不安と熱量低下を解消する。<br>
+          サービスの全体像と「使い倒し方」を伝え、解約を防ぐための面談マニュアル。
+        </p>
+      </div>
+
+      <div class="manual-toc">
+        <strong>目次</strong>
+        <ol>
+          <li><a href="#s1">目的</a></li>
+          <li><a href="#s2">面談の概要</a></li>
+          <li><a href="#s3">面談前の準備</a></li>
+          <li><a href="#s4">当日の流れ（アジェンダ）</a></li>
+          <li><a href="#s5">トークスクリプト</a></li>
+          <li><a href="#s6">面談後の対応事項</a></li>
+          <li><a href="#s7">面談のコツ（Do / Don't）</a></li>
+        </ol>
+      </div>
+
+      <section class="section" id="s1">
+        <h2>1. 目的</h2>
+        <ul>
+          <li>顧客との継続的なタッチポイントを作り、解約を防止する。</li>
+          <li>受講開始前の不安・熱量低下を解消し、初回セッションに最高の状態で臨んでもらう。</li>
+          <li>サービスの全体像と「使い倒し方（マインドセット）」を理解してもらう。</li>
+        </ul>
+      </section>
+
+      <section class="section" id="s2">
+        <h2>2. 面談の概要</h2>
+        <table class="kvtable">
+          <tr><td>所要時間</td><td>約20〜30分</td></tr>
+          <tr><td>形式</td><td>オンライン（画面共有あり）</td></tr>
+          <tr><td>ゴール</td><td>① サービス内容の再確認 ② 事前ワーク・スケジュールの合意 ③ コーチマッチング用ヒアリング完了</td></tr>
+        </table>
+      </section>
+
+      <section class="section" id="s3">
+        <h2>3. 面談前の準備（前提）</h2>
+        <ul>
+          <li>TimeRex でコンシェルジュ面談を設定 →「完了」ステータスに変更。</li>
+          <li>アプリの説明動画を送付（ログインを試みてもらうところまで案内）。</li>
+          <li>代表 Ryu からのウェルカム動画を準備（顧客名入りのパーソナライズ動画。冒頭で再生する）。</li>
+          <li>申込内容の確認：プラン（3ヶ月／6ヶ月）、スポットコーチ有無、アプグレ対象か。</li>
+          <li>前回面談（営業面談）の記録を確認：目標・課題・生活状況・担当営業。</li>
+          <li>biz.office アカウントから「ゴールナビ」「POTEXダッシュボード」をコピーできる状態にしておく。</li>
+        </ul>
+      </section>
+
+      <section class="section" id="s4">
+        <h2>4. 当日の流れ（アジェンダ）</h2>
+        <ol class="agenda">
+          <li>冒頭・アイスブレイク（近況・状態の確認）</li>
+          <li>代表ウェルカム動画の再生</li>
+          <li>サービス内容のご案内（セッション構成・デイリークエスト）</li>
+          <li>コミュニティのご案内（Discord・パフォーマンスアカデミー）</li>
+          <li>事前ワークのご紹介（現状診断アンケート／ゴールナビ／ダッシュボード）</li>
+          <li>初回セッションまでのスケジュール説明</li>
+          <li>コーチマッチングのヒアリング</li>
+          <li>セッションの注意点（キャンセルポリシー等）</li>
+          <li>オフラインイベント・グループセッションのご案内</li>
+          <li>スポットコーチのご案内（対象者のみ）</li>
+          <li>アプグレのご案内（対象者のみ：40日後まで差額）</li>
+          <li>紹介依頼（5万円キャッシュバック）</li>
+          <li>クロージング（質問受付・今後の流れの再確認）</li>
+        </ol>
+      </section>
+
+      <section class="section" id="s5">
+        <h2>5. トークスクリプト</h2>
+
+        <h3>0. 冒頭・アイスブレイク</h3>
+        <div class="script-box">
+          「こんにちは！改めまして、POTEXコーチングの受講を決めていただきありがとうございます。受講前のサポートをさせていただくコンシェルジュの〇〇です。本日は大体20〜30分でサービスのご説明と初回面談についてご案内をさせていただきます。」
+        </div>
+        <div class="callout warn">
+          <span class="tag">重要：近況・コンディションの確認</span>
+          契約から面談まで期間が空いている場合は、必ず近況を聞く。仕事の状況変化（異動・繁忙期の終了・出張など）、熱量の変化（「燃え尽きている」「気が抜けた」等のサイン）を拾う。
+        </div>
+        <p>熱量が下がっているサインがあれば、モチベーション低下こそサービスが解決する課題であることを伝え、前向きに転換する。</p>
+        <div class="script-box">「ここからもう一度ぶち上げていきましょう」「気合ではなく仕組みでカバーできるのがPOTEXです」</div>
+
+        <h3>1. 代表ウェルカム動画の再生</h3>
+        <div class="script-box">「とっておきの動画を用意しているので、画面共有させていただきますね。」</div>
+        <p>動画のポイント（再生後に口頭でも補強する）：</p>
+        <ul>
+          <li>「私たちが人生の一番の味方として伴走する」というスタンス</li>
+          <li>コーチへの関わり方の秘訣：「自分がどうなりたいか」「どう関わってほしいか」「何としても解決したい課題」をコーチに明確にぶつけてもらう → コーチはそれ以上の熱量でコミットする</li>
+          <li>困りごとはいつでもサポートLINEへ（コーチには見えないパーソナルな窓口）</li>
+        </ul>
+        <div class="script-box">「担当コーチは付きますが、コーチ1人が伴走するのではなく、代表も含めた会社全体で伴走する仕組みが整っていますので、ご安心ください。」</div>
+        <p>※動画は面談後にLINEでも送付する旨を伝える。</p>
+
+        <h3>2. サービス内容のご案内</h3>
+        <p>プランの確認（クイズ形式で本人に答えてもらう）：</p>
+        <div class="script-box">「今回お申し込みいただいたプラン、何ヶ月のプランだったか覚えてますか？」</div>
+        <p>セッション構成の説明（6ヶ月プランの例）：</p>
+        <table class="kvtable">
+          <tr><th>期間</th><th>頻度</th><th>回数</th></tr>
+          <tr><td>1〜3ヶ月目</td><td>週1回</td><td>12回</td></tr>
+          <tr><td>4ヶ月目以降</td><td>隔週1回</td><td>6回</td></tr>
+          <tr><td>合計</td><td>―</td><td>18回</td></tr>
+        </table>
+        <ul>
+          <li>初回セッションは90分：目標設定と毎日のアクションへの落とし込みを行う、最も重要なセッション。</li>
+          <li>2回目以降は30分。</li>
+        </ul>
+        <p><strong>デイリークエストの説明：</strong>初回セッションで決めたアクションを「デイリークエスト」というシステムに落とし込む。毎日2〜3分で回答できる、顧客ごとのオーダーメイドの習慣化システム。毎日送信すると、コーチから毎日フィードバックがもらえる。</p>
+        <div class="callout note">
+          <span class="tag">相談窓口の使い分け（必ず伝える）</span>
+          習慣化やセッション内容の相談 → 担当コーチへ。不安・不満・「ちょっと違うな」 → サポートLINEへ（運営が対応）。
+        </div>
+
+        <h3>3. コミュニティのご案内</h3>
+        <p>POTEX受講者限定コミュニティを Discord で運営している。招待リンク：<a href="https://discord.gg/HwtHVSr8" target="_blank" rel="noopener">POTEX | コミットメントコミュニティ</a></p>
+        <p>画面共有しながら各部屋を紹介：</p>
+        <ul>
+          <li>卒業生やコーチも含め100人規模のコミュニティ</li>
+          <li>ワークショップ・勉強会：月3〜4回開催（オンライン＋対面イベントも）。外部講師の講習もあり</li>
+          <li>アーカイブ：過去のワークショップも遡って視聴可能。今日から使える</li>
+          <li>ディープワーク部屋：カメラONで集中して作業する部屋（「誰かに見られている状態」で作業・勉強できる）</li>
+          <li>発信文化：「今日◯時に起きました」「運動しました」等の日々の報告で仲間と刺激し合える</li>
+        </ul>
+        <p><strong>パフォーマンスアカデミー（Notion）：</strong>代表 Ryu が習慣化・目標達成の知見を科学的な論文に基づき「教科書」のように1つにまとめたデータベース。卒業後も自走するための知識のインプットに活用してもらう。</p>
+        <p><strong>利用期間：</strong>コミュニティはプランに応じた期間利用可能（例：6ヶ月プランなら約1年間）。コーチング終了後もイベント・勉強会に参加できることを伝え、長期的な価値を訴求する。</p>
+        <div class="callout warn">
+          <span class="tag">【必須】自己紹介</span>
+          「Discordに入ったら、まず最初に自己紹介部屋で自己紹介をお願いします！」
+        </div>
+        <p>コミュニティガイドラインの案内：<a href="https://docs.google.com/document/d/1kVbCH6KOfBipii38Wk7pLjayWueMVFN8CLhaJTd1p98/edit" target="_blank" rel="noopener">ガイドライン</a></p>
+
+        <h3>4. 事前ワークのご紹介</h3>
+        <div class="script-box">「初回コーチングを◯◯さんにとって有意義な時間にするために、事前にワークに取り組んでいただきたいです。面談後に2点、資料をお送りします。」</div>
+        <p><strong>① 現状診断アンケート（必須・約15分）</strong>：最新のURLを確認して送付。生活習慣・目標・課題を把握するためのアンケート形式。期日：契約開始日の3日前まで（必ず具体的な日付を口頭で伝える）。</p>
+        <p><strong>② ゴールナビ（強く推奨・約2時間）</strong>：ありたい姿から逆算してコーチングするために必要な、最重要の事前ワーク。このシートを元に初回セッションが進むため、ここがぶれるとコーチングの方向性がずれる。</p>
+        <ul>
+          <li>理想像を描くワーク（事前に取り組む）</li>
+          <li>理想像・価値観に即した目標を立てるワーク（事前に取り組む）</li>
+          <li>目標達成のために日々何をやるか設計する（初回セッションでコーチと取り組む）</li>
+        </ul>
+        <p>目安期日：初回面談の前日。途中保存も可能。一気にやらなくてよいと伝える。</p>
+        <div class="callout note">
+          <span class="tag">書き方のポイント（必ず伝える）</span>
+          綺麗な文章や100点満点の回答は不要。今思っていることをありのまま全部書いてもらう。ジャーナリングのように使ってOK。「これがコーチに想いをぶつける手段」だと伝える。
+        </div>
+        <p><strong>③ POTEXダッシュボード</strong>：ゴールナビの内容を一覧できるシート。ゴールナビを書き上げれば完成する。</p>
+        <p><strong>面談中の作業（顧客に説明しながら実施）：</strong></p>
+        <ol>
+          <li>biz.office アカウントから「ゴールナビ」「POTEXダッシュボード」をコピー</li>
+          <li>ファイル名を「ゴールナビ_顧客名」「POTEXダッシュボード_顧客名」に変更</li>
+          <li>POTEXサポートLINEから2つのシートを送付</li>
+        </ol>
+
+        <h3>5. 初回セッションまでのスケジュール説明</h3>
+        <p>事前ワークはヘビーなので、約2週間の準備期間を設けている。タイムラインを具体日付で説明する（例：面談日が5/10の場合）：</p>
+        <table class="kvtable">
+          <tr><th>日付</th><th>内容</th></tr>
+          <tr><td>本日</td><td>Discord招待・事前ワーク・代表動画をLINEで送付</td></tr>
+          <tr><td>契約開始日の3日前（例：5/21）</td><td>① 事前ワークの提出期限 ② この日までにコーチをアサインし、サポートLINEからコーチのアカウントをご案内</td></tr>
+          <tr><td>契約開始日（例：5/24）</td><td>面談日から約2週間後に設定。コーチのアカウントを追加してもらい、コーチと直接日程調整</td></tr>
+        </table>
+        <div class="callout warn">
+          <span class="tag">必ず伝える</span>
+          「契約開始日＝初回面談日」ではないことを明確に伝える。本サービスは契約日やカレンダー上の月日ではなく「セッションの回数」を基準に進行するため、初回コーチングが契約開始日と離れても問題ないと安心してもらう。事前ワークが期日に間に合わなそうな場合は相談可能と伝える。
+        </div>
+
+        <h3>6. コーチマッチングのヒアリング</h3>
+        <div class="callout note">
+          <span class="tag">成し遂げたいことの再ヒアリング（営業面談の内容を鵜呑みにしない）</span>
+          「一番成し遂げたいこと、もう一度教えていただけますか？」
+        </div>
+        <p>契約後に状況が変わっているケースは多い（異動・離任・転職など）。変化があれば：まず共感し状況を丁寧に聞く → 「環境が変わっても変わらない軸」（生活を整える・自信をつける等）を一緒に言語化し、それこそがコーチングで解決できるテーマだと紐付ける →「そのやる気の持っていき先がPOTEXです」と前向きに接続する。</p>
+        <p><strong>ヒアリング項目：</strong></p>
+        <ul>
+          <li>セッションを受けやすい曜日・時間帯（優先順位まで確認）</li>
+          <li>コーチへの要望（性別・雰囲気・専門領域など）</li>
+          <li>不安に感じていること（雑談が苦手・初対面が緊張する等）</li>
+        </ul>
+        <div class="script-box">「コーチは全員プロフェッショナルなので大丈夫です。もしやりづらさを感じたら、遠慮なくサポートLINEに連絡してください。私たちを守り神だと思ってください。」</div>
+        <p>ヒアリング内容と事前アンケート（ステータスチェッカー）の回答をもとにマッチングを行う。</p>
+        <div class="callout note">
+          <span class="tag">よくある要望：担当営業をコーチに指名したい場合</span>
+          ① 指名してくれたことに感謝を伝える ② 基本的に、自己管理をマスターした元受講生がコーチを担当していると説明 ③ コーチは英語・資格・副業・キャリアなどの強みを持ち、受講者の状況に合わせてマッチングしていると説明 ④「営業担当にそのままお願いしたいという方は結構多いです」と共感 ⑤「担当になるかもしれませんし、ならなかったとしても、習慣化・目標達成に向けた価値提供は間違いなくできますのでご安心ください」と締める。
+        </div>
+
+        <h3>7. セッションの注意点（キャンセルポリシー）</h3>
+        <p>ドキュメントを画面共有しながら説明：</p>
+        <ul>
+          <li>次回日程の決め方：セッションの最後に「次回いつにしますか？」と決めていく方式（先の予定を一括で決めるわけではない）</li>
+          <li>日程変更・キャンセル：やむを得ない事情（体調不良など）の場合、前日21:00までにコーチへ連絡すれば変更可能</li>
+          <li>前日21:00以降の連絡・当日キャンセル：原則として1回分のセッション消化となる</li>
+          <li>無断キャンセルも同様の扱い</li>
+        </ul>
+        <p>「セッションの質を保つためのルール」であることを添え、理解と協力をお願いする。説明後、「ここまでで質問はありますか？」と確認を挟む。</p>
+
+        <h3>8. オフラインイベント・グループセッションのご案内</h3>
+        <ul>
+          <li>直近のオフラインイベント（食事会・対面ワークショップ等）の候補日を具体的に伝え、予定を空けてもらう</li>
+          <li>顧客の居住エリアに近い開催があれば積極的に案内する</li>
+          <li>詳細（日程候補・場所）はDiscord内に記載があることを伝える</li>
+          <li>グループセッションの対象者には、Ryu・榊原コーチと目標を明確にするセッションである旨を確認・案内する</li>
+        </ul>
+
+        <h3>9. スポットコーチのご案内（スポットコーチ：有の方のみ）</h3>
+        <p>該当者にスポットコーチの利用方法を案内する。</p>
+
+        <h3>10. アプグレのご案内（対象者のみ）</h3>
+        <p>該当者に、40日後まで差額でアップグレード可能であることを説明する。</p>
+
+        <h3>11. 紹介依頼</h3>
+        <p>紹介制度（5万円キャッシュバック）を案内する。</p>
+
+        <h3>12. クロージング</h3>
+        <p>定着確認（クイズ形式）：</p>
+        <div class="script-box">「Discordに入ったら一番最初にやること、覚えてますか？（→ 自己紹介）」</div>
+        <p><strong>今後の流れの再確認：</strong>この後すぐにLINEで送るもの（① Discord招待 ② 事前ワーク2点 ③ 代表のウェルカム動画）、事前ワークの期日とコーチ連絡のタイミング（具体日付）、オフラインイベントの候補日。</p>
+        <div class="script-box">「ここは別にゴールではなく、むしろゼロからのスタートです。ご自身の目標・目的だけを見て進んでいただければ、担当コーチ1人ではなく会社全体で全力でサポートします。初回セッションから元気にやっていきましょう！分からないことがあればいつでもLINEください。すぐ回答します。本日はありがとうございました！」</div>
+      </section>
+
+      <section class="section" id="s6">
+        <h2>6. 面談後の対応事項</h2>
+        <ul>
+          <li>LINEで送付：Discord招待リンク／現状診断アンケート／ゴールナビ／POTEXダッシュボード／代表ウェルカム動画</li>
+          <li>マッチング未対応フォルダに「顧客名」でフォルダを作成</li>
+          <li>ゴールナビ・POTEXダッシュボード・デイリークエスト（編集用）をフォルダに移動</li>
+          <li>ゴールナビ_参加者の確定をシートで管理</li>
+          <li>勉強会の案内：リアルタイム参加希望者 → リンク送付／アーカイブ希望者 → アーカイブ送付</li>
+          <li>マッチング完了後、各POTEXコーチのフォルダに全て移動</li>
+        </ul>
+      </section>
+
+      <section class="section" id="s7">
+        <h2>7. 面談のコツ（Do / Don't）</h2>
+        <div class="split2">
+          <div class="minicard">
+            <h4>Do</h4>
+            <ul>
+              <li>顧客の名前を頻繁に呼び、テンションを合わせる</li>
+              <li>「覚えてますか？」とクイズ形式で確認し、受け身にさせない</li>
+              <li>期日・日付は必ず具体的な日付で伝える（「3日前まで」だけで終わらせない）</li>
+              <li>顧客の状況変化・感情の変化（燃え尽き・不安・自信のなさ）を拾い、サービスの価値に接続する</li>
+              <li>不安には「サポートLINE＝守り神」で安心感を与える</li>
+              <li>「使い倒してほしい」というスタンスを繰り返し伝える</li>
+            </ul>
+          </div>
+          <div class="minicard">
+            <h4>Don't</h4>
+            <ul>
+              <li>一方的な説明に終始する（相槌・反応を確認しながら進める）</li>
+              <li>前回の営業面談の情報を鵜呑みにして目標ヒアリングを省略する</li>
+              <li>契約開始日＝初回セッション日と誤解させたまま終える</li>
+              <li>キャンセルポリシーの説明を省略・曖昧にする</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="next-steps">
+        <a href="04-ai.html">05 AIの活用 へ進む →</a>
+      </div>
+
+      <footer class="footer">
+        <p>POTEXマニュアル｜社外秘</p>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
