@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03-8 営業マニュアル｜POTEXマニュアル</title>
+  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="common.css">
+  <style>
+    .manual-toc{background:#f6f8fb;border:1px solid #e3e7ee;border-radius:10px;padding:16px 20px;margin:20px 0;}
+    .manual-toc ol{margin:6px 0 0;padding-left:20px;}
+    .manual-toc li{margin:4px 0;}
+    .kvtable{border-collapse:collapse;margin:12px 0;width:100%;max-width:640px;font-size:.95rem;}
+    .kvtable th{background:#1f6feb;color:#fff;padding:8px 12px;text-align:left;}
+    .kvtable td{border:1px solid #e3e7ee;padding:8px 12px;}
+    .kvtable tr td:first-child{background:#f6f8fb;font-weight:700;white-space:nowrap;}
+    .callout{border-radius:10px;padding:14px 16px;margin:14px 0;font-size:.95rem;}
+    .callout .tag{font-weight:700;font-size:.8rem;display:block;margin-bottom:4px;}
+    .callout.warn{background:#fff5f5;border:1px solid #f0b4b4;}
+    .callout.warn .tag{color:#b12727;}
+    .callout.note{background:#f0f6ff;border:1px solid #bcd6ff;}
+    .callout.note .tag{color:#12508f;}
+    .flowline{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:14px 0;}
+    .flowline .fstep{background:#f6f8fb;border:1px solid #e3e7ee;border-radius:8px;padding:8px 12px;font-size:.9rem;font-weight:600;}
+    .flowline .farrow{color:#1f6feb;font-weight:700;}
+    .pill{display:inline-block;background:#f0f6ff;border:1px solid #bcd6ff;color:#12508f;border-radius:999px;padding:1px 10px;font-size:.8rem;font-weight:700;}
+    .script-box{background:#f6f8fb;border-left:3px solid #1f6feb;border-radius:0 8px 8px 0;padding:14px 18px;margin:12px 0;font-size:.95rem;}
+    .split2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:12px 0;}
+    .split2 .minicard{background:#f6f8fb;border:1px solid #e3e7ee;border-radius:10px;padding:14px 16px;}
+    .split2 .minicard h4{margin:0 0 6px;}
+    @media(max-width:700px){.split2{grid-template-columns:1fr;}}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="header-logo-link">
+      <img src="logo.png" alt="POTEX" class="header-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='inline';">
+      <span class="header-logo-fallback" style="display:none;font-weight:700;font-size:1.1rem;">POTEX</span>
+    </a>
+    <span class="header-title"><span class="header-title-num">03</span>| 営業</span>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <nav>
+        <a href="index.html" class="nav-link">トップ</a>
+        <a href="01-potex.html" class="nav-link">01 | POTEXとは</a>
+        <a href="01-1-vision.html" class="nav-link nav-link-sub">01-1 ビジョン・理念</a>
+        <a href="01-2-service.html" class="nav-link nav-link-sub">01-2 SDP・サービス内容</a>
+        <a href="01-3-target.html" class="nav-link nav-link-sub">01-3 ターゲット層</a>
+        <a href="01-4-pricing.html" class="nav-link nav-link-sub">01-4 料金体系</a>
+        <a href="01-5-coaches.html" class="nav-link nav-link-sub">01-5 コーチ紹介</a>
+        <a href="02-marketing.html" class="nav-link">02 | マーケ</a>
+        <a href="02-1-channel.html" class="nav-link nav-link-sub">02-1 集客チャネル</a>
+        <a href="02-2-line.html" class="nav-link nav-link-sub">02-2 LINE運用</a>
+        <a href="02-3-funnel.html" class="nav-link nav-link-sub">02-3 ファネル設計</a>
+        <a href="02-4-kpi.html" class="nav-link nav-link-sub">02-4 KPI・効果測定</a>
+        <a href="03-sales.html" class="nav-link">03 | 営業</a>
+        <a href="03-0-principles.html" class="nav-link nav-link-sub">03-0 営業の原理原則</a>
+        <a href="03-1-process.html" class="nav-link nav-link-sub">03-1 営業プロセス</a>
+        <a href="03-6-sns-script.html" class="nav-link nav-link-sub">03-6 SNSスクリプト</a>
+        <a href="03-7-sdp-script.html" class="nav-link nav-link-sub">03-7 トークスクリプト</a>
+        <a href="03-8-sales-manual.html" class="nav-link nav-link-sub active">03-8 営業マニュアル</a>
+        <a href="03-9-lifty.html" class="nav-link nav-link-sub">03-9 ライフティ（信販）</a>
+        <a href="04-ai.html" class="nav-link">04 | AIの活用</a>
+        <a href="04-1-tools.html" class="nav-link nav-link-sub">04-1 ツール一覧</a>
+        <a href="04-2-prompts.html" class="nav-link nav-link-sub">04-2 プロンプト集</a>
+        <a href="04-3-automation.html" class="nav-link nav-link-sub">04-3 自動化事例</a>
+        <a href="05-other.html" class="nav-link">05 | その他</a>
+        <a href="05-1-faq.html" class="nav-link nav-link-sub">05-1 FAQ</a>
+        <a href="05-2-links.html" class="nav-link nav-link-sub">05-2 ツールリンク集</a>
+        <a href="05-3-videos.html" class="nav-link nav-link-sub">05-3 研修動画</a>
+        <a href="05-4-article.html" class="nav-link nav-link-sub">05-4 コンテンツ記事</a>
+        <a href="06-operations.html" class="nav-link">06 | 運営管理</a>
+        <a href="06-1-data-management.html" class="nav-link nav-link-sub">06-1 顧客・数値管理</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <p class="breadcrumb"><a href="index.html">トップ</a> &gt; <a href="03-sales.html">03 営業</a> &gt; 03-8 営業マニュアル</p>
+
+      <div class="hero-passion">
+        <p class="slogan-sub">SALES MANUAL</p>
+        <h1 class="slogan-main">面談を、標準化する。</h1>
+        <p class="hero-lead">
+          面談前・面談中・面談後の対応、トスアップ運用までの標準フロー。<br>
+          この通りに動けば、誰が担当しても同じ品質で対応できる。
+        </p>
+      </div>
+
+      <div class="manual-toc">
+        <strong>目次</strong>
+        <ol>
+          <li><a href="#s1">営業に必要なツール・初期セットアップ</a></li>
+          <li><a href="#s2">営業フロー全体像</a></li>
+          <li><a href="#s3">面談前対応事項</a></li>
+          <li><a href="#s4">面談中対応事項</a></li>
+          <li><a href="#s5">面談後対応事項</a></li>
+          <li><a href="#s6">トスアップ</a></li>
+          <li><a href="#s7">よくある質問（FAQ）</a></li>
+        </ol>
+      </div>
+
+      <!-- 1 -->
+      <section class="section" id="s1">
+        <h2>1. 営業に必要なツール・初期セットアップ</h2>
+        <ol>
+          <li><strong>Googleアカウントを作成する</strong><br>営業マネージャーからアカウント発行を依頼し、発行されたアカウントにログインする。（Googleドライブ・スプレッドシート・カレンダー・Meet 等で使用）</li>
+          <li><strong>Slackにログインする</strong><br>案内されたワークスペースに参加する。※ワークスペース参加権限は営業マネージャーから共有してもらう。</li>
+          <li><strong>Lステップにログインする</strong><br>営業対応に使用するLステップへログインする。リンク：<a href="https://manager.linestep.net" target="_blank" rel="noopener">https://manager.linestep.net</a><br>顧客対応の見落としがないよう、通知がONになっているか必ず確認する。</li>
+          <li><strong>GMOサインに入る</strong><br><a href="https://secure.gmosign.com/login/" target="_blank" rel="noopener">https://secure.gmosign.com/login/</a>（ログイン情報は営業マネージャー／社内共有シートを参照）</li>
+          <li><strong>TimeRex を設定する</strong><br>使い方は「5. 面談後対応事項」で解説。</li>
+        </ol>
+        <div class="callout warn">
+          <span class="tag">取り扱い注意</span>
+          ログイン情報は社外に漏らさないこと。認証情報を扱う画面のスクリーンショット共有にも注意する。
+        </div>
+      </section>
+
+      <!-- 2 -->
+      <section class="section" id="s2">
+        <h2>2. 営業フロー全体像</h2>
+        <div class="flowline">
+          <span class="fstep">① 面談日程確定（CS）</span><span class="farrow">→</span>
+          <span class="fstep">② 面談前準備</span><span class="farrow">→</span>
+          <span class="fstep">③ 無料コーチング体験</span><span class="farrow">→</span>
+          <span class="fstep">④ 申込・決済案内</span><span class="farrow">→</span>
+          <span class="fstep">⑤ 面談後対応・社内共有</span>
+        </div>
+        <h3>① CSより面談日程確定</h3>
+        <p>CSが顧客と面談日程を確定する。営業側には通知されないため、各自 Google カレンダーで必ず確認すること。</p>
+        <div class="callout note"><span class="tag">ポイント</span>前日18時以降にマッチングされた場合は CS より連絡が入る。こまめにカレンダーの予定を調整・チェックすること。</div>
+        <h3>② 面談前準備</h3>
+        <p>顧客情報・コーチ属性・使用資料を事前に確認し、面談の軸を整理する。<strong>事前確認なしでの面談はNG。</strong></p>
+        <h3>③ 無料コーチング体験（営業面談）</h3>
+        <p>所要時間：1時間半〜2時間。POTEXのサービス説明は指定の Canva 資料を使用する。</p>
+        <h3>④ 申込・決済案内</h3>
+        <p>面談中、顧客が前向きな場合に申込・決済案内を行う。</p>
+        <h3>⑤ 面談後対応・社内共有</h3>
+        <p>成約内容を社内に共有し、各種ステータスを更新する。</p>
+      </section>
+
+      <!-- 3 -->
+      <section class="section" id="s3">
+        <h2>3. 面談前対応事項</h2>
+        <ul>
+          <li>Google カレンダーの説明欄で<strong>顧客情報を確認</strong>する。</li>
+          <li>コーチ紹介資料を確認する：<a href="https://www.canva.com/design/DAG4pq_jAiE/fVPGp2Mf_APC8UUbCIgW0g/edit" target="_blank" rel="noopener">コーチ紹介 Canva</a></li>
+          <li>面談用 Canva 資料を確認する：<a href="https://www.canva.com/design/DAG6ChmDyNo/iksYXZncrXeUPHrF7MLv_g/edit" target="_blank" rel="noopener">面談用 Canva</a></li>
+        </ul>
+      </section>
+
+      <!-- 4 -->
+      <section class="section" id="s4">
+        <h2>4. 面談中対応事項</h2>
+        <p>手順：サービス説明（資料使用）→ 申込・決済案内。</p>
+        <h3>営業対応別フロー（判断基準）</h3>
+        <p>営業担当は顧客の発言内容を観察し、ケースを判断する。</p>
+        <div class="split2">
+          <div class="minicard">
+            <h4>ケース① 判断（あと一押し必要）</h4>
+            <p>金額への強い不安発言／家族承認への迷い／「少し考えたい」の繰り返し／決断エネルギーが弱い、といったサインがある場合。</p>
+            <p><strong>30日返金特約を口頭説明</strong>し、契約書読み合わせ（返金特約条項を重点確認）→ 申込フォーム送信 → 契約書送信。</p>
+            <p>条件：毎日クエスト送信必須／コーチングセッション受講必須／指定行動要件達成／初期費用55,000円は返金対象外／条件未達は返金不可。</p>
+          </div>
+          <div class="minicard">
+            <h4>ケース② 判断（あと一押し不要）</h4>
+            <p>意思決定が明確・不安が小さい場合。</p>
+            <p>30日返金特約の口頭説明<strong>なし</strong> → 契約書読み合わせ（通常契約）→ 契約書のみ送信（申込フォームは送らない）。</p>
+          </div>
+        </div>
+        <div class="callout warn"><span class="tag">重要ポイント</span>初期セットアップ費用 55,000円は常に返金対象外。返金特約は条件達成が必須。</div>
+
+        <h3>顧客が前向きな場合の案内手順</h3>
+        <ul>
+          <li><strong>契約書読み合わせ</strong>（契約書ドキュメントを画面共有）</li>
+          <li><span class="pill">30日間返金保証を案内した場合のみ</span> お申し込みフォーム送付
+            <ul>
+              <li>Lステップ「面談中即決メッセージ」テンプレートを使用</li>
+              <li>面談者の LINE にフォームリンクを送付</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h3>返金ルールの区分</h3>
+        <ul>
+          <li><strong>クーリングオフ期間（Day 0–8）</strong>：全額返金・無条件。支払い金額すべて対象。最優先で適用。</li>
+          <li><strong>30日返金特約期間（Day 0–30）</strong>：条件付き返金。初期セットアップ費用 55,000円は返金対象外（残額返金）。30日経過後は消化割合が返金額を決定。</li>
+          <li><strong>中途解約（Day 30以降・契約書第6条）</strong>：受講済みコーチング量に応じて返金額が変動。未消化分のみ返金対象。詳細な計算方法は契約書第6条に明記。</li>
+        </ul>
+
+        <h3>決済案内</h3>
+        <ul>
+          <li>「面談中即決メッセージ」から決済リンクを送付。※通常金額でない場合（銀行一部振込・カード2枚使い等）は決済リンク一覧のシートから選ぶ。</li>
+          <li>銀行振込希望の場合は「銀行振込送付メッセージ」から銀行口座をコピーして送付。</li>
+        </ul>
+
+        <h3>サポートLINEの送付</h3>
+        <p>入会者向けサポートLINEを案内する。</p>
+        <ul>
+          <li>Lステップ → テンプレート → 営業</li>
+          <li>「サポートLINE送付メッセージ」から文章をコピーして送付</li>
+        </ul>
+      </section>
+
+      <!-- 5 -->
+      <section class="section" id="s5">
+        <h2>5. 面談後対応事項</h2>
+        <div class="split2">
+          <div class="minicard"><h4>成約時</h4><p>契約書を送付する。</p></div>
+          <div class="minicard"><h4>失注時</h4><p>面談後メッセージの送付・サービス資料の送付を行う。</p></div>
+        </div>
+        <h3>Lステップ・ステータス更新</h3>
+        <ul>
+          <li>Lステップ対応ステータスを変更する。</li>
+          <li>Lステップのタグを変更する（例：営業管理タグ、プラン別タグ、一次／二次担当タグ 等）。</li>
+        </ul>
+        <h3>Slackで成約報告（成約の場合のみ）</h3>
+        <ul>
+          <li>営業全体チャンネルへ、着金次第シンプルに成約報告（他メンバーの報告を参考にする）。報告内容：名前／プラン／契約締結済か／決済済か。</li>
+          <li>「面談管理」と「営業報告部屋（Slack）」へ投稿する。</li>
+        </ul>
+        <h3>コーチマッチング部屋で音声報告</h3>
+        <ul>
+          <li>名前／プラン／着金確認／スポットコーチの有無／アップグレード余地／Gemini 商談記録</li>
+        </ul>
+        <div class="callout warn"><span class="tag">支払い未完了・分割などがある場合</span>スレッドの返信で「寉田」または「CS担当」をメンションし、支払い計画を共有すること。</div>
+      </section>
+
+      <!-- 6 -->
+      <section class="section" id="s6">
+        <h2>6. トスアップ</h2>
+        <p><strong>目的：</strong>一次面談で「決めきれない」状態になった際に、親和性の高い営業担当（FC）へ繋ぐことで成約率を最大化する。</p>
+        <h3>適用条件（トスアップして良いケース）</h3>
+        <h4>A. 「決めきれない」状態</h4>
+        <ul>
+          <li>興味はあるが即決できない</li>
+          <li>迷っている理由が「不安・納得不足・比較中」などで、追加の対話で解消できそう</li>
+          <li>前向きだが、相性が理由で踏み切れていない（温度感はある）</li>
+        </ul>
+        <h4>B. 「親和性が高い別FCが入ると刺さりそう」状態</h4>
+        <ul>
+          <li>属性（職業・年齢・性別・悩み領域）が明確になり、特定FCの方が信頼を取りやすい</li>
+          <li>“この人のストーリー／実績”が刺さる顧客像だと判断できる</li>
+        </ul>
+        <h3>トスアップしない方が良いケース（例外）</h3>
+        <p>以下はトスアップではなく、通常のフォローまたはクローズ見送りに切り替える。</p>
+        <ul>
+          <li>明確に温度が低い（サービス自体に興味が薄い）</li>
+          <li>価格のみが原因で予算的に厳しい（面談追加で解決しない）</li>
+          <li>一次面談で必要情報のヒアリングが不足している（※この場合はまず一次側で回収）</li>
+        </ul>
+        <h3>一次面談の基本運用（最低45分）</h3>
+        <p>トスアップ前提でも、顧客の時間を確保している以上、45分は最低ラインとして価値提供する。</p>
+        <h4>一次面談でやること</h4>
+        <ul>
+          <li>現状の課題（詰まりポイント）を言語化</li>
+          <li>理想状態と期間感の確認</li>
+          <li>これまでの挫折パターン（何が原因で続かなかったか）</li>
+          <li>期待しているサポート（コーチ／環境／仕組み）</li>
+          <li>不安点の洗い出し（価格・時間・続けられるか等）</li>
+          <li>温度感確認（今すぐ／検討／保留の理由）</li>
+        </ul>
+        <h4>提案スタンス・基本スクリプト</h4>
+        <p>押し付けにならず「顧客の納得を増やす提案」になる言い回しを使う。</p>
+        <div class="script-box">
+          ここまでお話して、前向きではある一方で、まだ決めきれない部分もありますよね。<br>
+          もしよければなんですが、POTEXには複数のファーストコーチがいて、今のお悩みだと、◯◯が得意な（FC名）と話すと、かなり整理が進むと思います。<br>
+          一度この方とも話してみませんか？（二次面談としてお繋ぎできます）
+        </div>
+        <h3>二次面談の設定手順</h3>
+        <ol>
+          <li><strong>一次担当が「トスアップ確定」判断</strong>：顧客の温度＝中〜高／迷いの理由＝相性・納得不足・あと一押し／次の担当で刺さる仮説が立つ。</li>
+          <li><strong>最適FCを選定</strong>：「刺さる理由」で選ぶ（例：経営者目線、フリーランス理解、英語領域、女性向け 等）。</li>
+          <li><strong>二次面談を提案し、その場で日程調整</strong>。<code>@All</code> にトスアップ用 TimeRex を共有：
+            <ul>
+              <li><a href="https://timerex.net/s/m.arita_909f_b2a0/b9e1deaa" target="_blank" rel="noopener">有田</a></li>
+              <li><a href="https://timerex.net/s/n.fuchigami_d332_9589/65bc66be" target="_blank" rel="noopener">渕上</a></li>
+              <li><a href="https://timerex.net/s/t.ishijima_3062/f9fd3bd1" target="_blank" rel="noopener">石島</a></li>
+              <li><a href="https://timerex.net/s/kosei.tahara_b45f/127963eb/" target="_blank" rel="noopener">田原</a></li>
+              <li><a href="https://timerex.net/s/h.aizawa_1766_38fb/72f49cd3" target="_blank" rel="noopener">相澤</a></li>
+              <li><a href="https://timerex.net/s/n.oyama_83ad_ff69/a8d14423" target="_blank" rel="noopener">大山</a></li>
+              <li>坪川（リンク準備中）／稲井（準備中）／佐藤（準備中）／高橋（準備中）</li>
+            </ul>
+          </li>
+          <li><strong>引き継ぎ情報を記録して共有（営業全体連絡）</strong>：顧客の課題／理想／不安／温度感／NG事項、決めきれない理由があれば記載。</li>
+        </ol>
+        <h3>報酬ルール</h3>
+        <ul>
+          <li>一次面談担当者：通常成約報酬の <strong>30%</strong></li>
+          <li>二次面談担当者：通常成約報酬の <strong>70%</strong></li>
+        </ul>
+        <div class="callout note"><span class="tag">例外（田原さんトスアップ）</span>田原さん・有田・福井の場合：一次面談に100%。</div>
+      </section>
+
+      <!-- 7 -->
+      <section class="section" id="s7">
+        <h2>7. よくある質問（FAQ）</h2>
+        <p>内容が確定次第、追記してください。</p>
+      </section>
+
+      <div class="next-steps">
+        <a href="03-9-lifty.html">03-9 ライフティ（信販）の使い方 へ進む →</a>
+      </div>
+
+      <footer class="footer">
+        <p>POTEXマニュアル｜社外秘</p>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
