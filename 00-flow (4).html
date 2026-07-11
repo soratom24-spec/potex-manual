@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <title>00 全体の流れ・担当者｜POTEXマニュアル</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="common.css">
+  <style>
+    .kvtable{border-collapse:collapse;margin:10px 0 22px;width:100%;max-width:720px;font-size:.93rem;}
+    .kvtable th{background:#1f6feb;color:#fff;padding:8px 12px;text-align:left;}
+    .kvtable td{border:1px solid #e3e7ee;padding:8px 12px;vertical-align:top;}
+    .kvtable tr td:first-child{background:#f6f8fb;font-weight:700;white-space:nowrap;width:130px;}
+    .callout{border-radius:10px;padding:14px 16px;margin:14px 0;font-size:.95rem;}
+    .callout .tag{font-weight:700;font-size:.8rem;display:block;margin-bottom:4px;}
+    .callout.warn{background:#fff5f5;border:1px solid #f0b4b4;}
+    .callout.warn .tag{color:#b12727;}
+    .badge-red{display:inline-block;background:#e02424;color:#fff;font-size:.72rem;font-weight:700;border-radius:5px;padding:2px 8px;margin-left:8px;vertical-align:middle;}
+    .phase-flow{display:flex;flex-wrap:wrap;align-items:stretch;gap:8px;margin:14px 0;}
+    .phase-box{flex:1 1 160px;border-radius:10px;padding:12px 14px;color:#fff;min-width:150px;}
+    .phase-box .phase-label{font-size:.72rem;font-weight:700;opacity:.9;letter-spacing:.05em;}
+    .phase-box .phase-title{font-size:1.02rem;font-weight:800;margin:2px 0 6px;}
+    .phase-box .phase-steps{font-size:.85rem;font-weight:600;opacity:.95;}
+    .p-blue{background:#2563c9;} .p-blue2{background:#3b82c4;} .p-pink{background:#d6608f;} .p-red{background:#c0392b;}
+    .phase-arrow{align-self:center;color:#9aa4b2;font-weight:700;}
+    .role-tag{display:inline-block;font-size:.72rem;font-weight:700;color:#fff;border-radius:5px;padding:2px 9px;margin-right:8px;vertical-align:middle;}
+    .r-sales{background:#2563c9;} .r-support{background:#16a34a;} .r-concierge{background:#7c3aed;}
+    .r-leader{background:#d97706;} .r-coach{background:#2563c9;} .r-afs{background:#b91c1c;}
+    .stepnum{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:#1f6feb;color:#fff;font-size:.8rem;font-weight:700;margin-right:8px;vertical-align:middle;}
+    h3{scroll-margin-top:20px;line-height:1.5;}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="header-logo-link">
+      <img src="logo.png" alt="POTEX" class="header-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='inline';">
+      <span class="header-logo-fallback" style="display:none;font-weight:700;font-size:1.1rem;">POTEX</span>
+    </a>
+    <span class="header-title"><span class="header-title-num">00</span>| 全体の流れ・担当者</span>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <nav>
+        <a href="index.html" class="nav-link">トップ</a>
+        <a href="00-flow.html" class="nav-link active">00 | 全体の流れ・担当者</a>
+        <a href="01-potex.html" class="nav-link">01 | POTEXとは</a>
+        <a href="01-1-vision.html" class="nav-link nav-link-sub">01-1 ビジョン・理念</a>
+        <a href="01-2-service.html" class="nav-link nav-link-sub">01-2 SDP・サービス内容</a>
+        <a href="01-3-target.html" class="nav-link nav-link-sub">01-3 ターゲット層</a>
+        <a href="01-4-pricing.html" class="nav-link nav-link-sub">01-4 料金体系</a>
+        <a href="01-5-coaches.html" class="nav-link nav-link-sub">01-5 コーチ紹介</a>
+        <a href="02-marketing.html" class="nav-link">02 | マーケ</a>
+        <a href="02-1-channel.html" class="nav-link nav-link-sub">02-1 集客チャネル</a>
+        <a href="02-2-line.html" class="nav-link nav-link-sub">02-2 LINE運用</a>
+        <a href="02-3-funnel.html" class="nav-link nav-link-sub">02-3 ファネル設計</a>
+        <a href="02-4-kpi.html" class="nav-link nav-link-sub">02-4 KPI・効果測定</a>
+        <a href="03-sales.html" class="nav-link">03 | 営業</a>
+        <a href="03-8-sales-manual.html" class="nav-link nav-link-sub">03-0 セットアップ</a>
+        <a href="03-9-lifty.html" class="nav-link nav-link-sub">03-0-2 ライフティ（信販）</a>
+        <a href="03-0-principles.html" class="nav-link nav-link-sub">03-1 営業の原理原則</a>
+        <a href="03-1-process.html" class="nav-link nav-link-sub">03-2 営業プロセス</a>
+        <a href="03-7-sdp-script.html" class="nav-link nav-link-sub">03-3 トークスクリプト</a>
+        <a href="03-6-sns-script.html" class="nav-link nav-link-sub">03-4 SNSスクリプト</a>
+        <a href="04-concierge.html" class="nav-link">04 | コンシェルジュ</a>
+        <a href="04-1-concierge-prep.html" class="nav-link nav-link-sub">04-1 面談前の準備</a>
+        <a href="04-2-concierge-meeting.html" class="nav-link nav-link-sub">04-2 コンシェルジュ面談</a>
+        <a href="04-3-concierge-after.html" class="nav-link nav-link-sub">04-3 面談後</a>
+        <a href="04-ai.html" class="nav-link">05 | AIの活用</a>
+        <a href="04-1-tools.html" class="nav-link nav-link-sub">05-1 ツール一覧</a>
+        <a href="04-2-prompts.html" class="nav-link nav-link-sub">05-2 プロンプト集</a>
+        <a href="04-3-automation.html" class="nav-link nav-link-sub">05-3 自動化事例</a>
+        <a href="05-other.html" class="nav-link">06 | その他</a>
+        <a href="05-1-faq.html" class="nav-link nav-link-sub">06-1 FAQ</a>
+        <a href="05-2-links.html" class="nav-link nav-link-sub">06-2 ツールリンク集</a>
+        <a href="05-3-videos.html" class="nav-link nav-link-sub">06-3 研修動画</a>
+        <a href="05-4-article.html" class="nav-link nav-link-sub">06-4 コンテンツ記事</a>
+        <a href="06-operations.html" class="nav-link">07 | 運営管理</a>
+        <a href="06-1-data-management.html" class="nav-link nav-link-sub">07-1 顧客・数値管理</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <p class="breadcrumb"><a href="index.html">トップ</a> &gt; 00 全体の流れ・担当者</p>
+      <div class="hero-passion">
+        <p class="slogan-sub">OVERALL FLOW</p>
+        <h1 class="slogan-main">誰が、いつ、何をやるか。</h1>
+        <p class="hero-lead">
+          営業成約後〜アフターフォローセッション（AFS）・継続までの業務フロー。<br>
+          各ステップの担当・期限・完了の定義を、この1枚で把握する。
+        </p>
+      </div>
+
+      <div class="callout warn">
+        <span class="tag">凡例</span>
+        「必ず遵守」と書かれた期限は重要期限。日数は成約日を Day0 として数える。
+      </div>
+      <section class="section">
+        <h2>フェーズ1：成約〜コーチ決定</h2>
+        <svg width="100%" viewBox="0 0 680 440" role="img" style="max-width:820px;display:block;margin:8px 0 4px;">
+          <title>成約からコーチ決定までの時間軸</title>
+          <line x1="78" y1="70" x2="78" y2="402" stroke="#c9cfda" stroke-width="2"/>
+          <circle cx="78" cy="95" r="6" fill="#185FA5"/>
+          <text x="20" y="99" font-size="13" font-weight="700" fill="#12508f">Day0</text>
+          <rect x="110" y="74" width="550" height="44" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+          <text x="126" y="93" font-size="14" font-weight="700" fill="#0C447C">① 営業成約直後 ・ ② マッチング部屋へ共有</text>
+          <text x="126" y="110" font-size="12" fill="#185FA5">担当：営業マン ／ 即時（必ず遵守）</text>
+          <circle cx="78" cy="170" r="6" fill="#7C3AED"/>
+          <text x="14" y="174" font-size="13" font-weight="700" fill="#5b21b6">Day3まで</text>
+          <rect x="110" y="149" width="550" height="44" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+          <text x="126" y="168" font-size="14" font-weight="700" fill="#3C3489">③ コンシェルジュ面談 設定・実施 ＋ 分野確認</text>
+          <text x="126" y="185" font-size="12" fill="#534AB7">担当：石島 ／ 契約後Day3までに実施（必ず遵守）</text>
+          <circle cx="78" cy="245" r="6" fill="#7C3AED"/>
+          <text x="14" y="249" font-size="12" font-weight="700" fill="#5b21b6">面談後すぐ</text>
+          <rect x="110" y="224" width="550" height="44" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+          <text x="126" y="243" font-size="14" font-weight="700" fill="#3C3489">④ 面談後対応（コーチ選定依頼）</text>
+          <text x="126" y="260" font-size="12" fill="#534AB7">担当：石島 → コーチリーダーへメンション</text>
+          <circle cx="78" cy="320" r="6" fill="#BA7517"/>
+          <text x="10" y="316" font-size="12" font-weight="700" fill="#854f0b">＋3日</text>
+          <text x="10" y="331" font-size="12" font-weight="700" fill="#854f0b">Day7まで</text>
+          <rect x="110" y="299" width="550" height="44" rx="8" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
+          <text x="126" y="318" font-size="14" font-weight="700" fill="#633806">⑤ コーチ選定</text>
+          <text x="126" y="335" font-size="12" fill="#854F0B">担当：菊地 ／ 面談から3日以内・Day0からDay7まで（必ず遵守）</text>
+          <circle cx="78" cy="383" r="6" fill="#0F6E56"/>
+          <rect x="110" y="370" width="550" height="30" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+          <text x="126" y="389" font-size="13" font-weight="700" fill="#085041">⑥ コーチLINE共有　担当：寉田（決定後すぐ）</text>
+        </svg>
+      </section>
+
+      <section class="section">
+        <h2>フェーズ2：セッション実施</h2>
+        <svg width="100%" viewBox="0 0 680 440" role="img" style="max-width:820px;display:block;margin:8px 0 4px;">
+          <title>セッション実施の時間軸</title>
+          <line x1="90" y1="60" x2="90" y2="402" stroke="#c9cfda" stroke-width="2"/>
+          <circle cx="90" cy="85" r="6" fill="#185FA5"/>
+          <rect x="120" y="64" width="540" height="44" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+          <text x="136" y="83" font-size="14" font-weight="700" fill="#0C447C">⑦ 初回グループセッション実施</text>
+          <text x="136" y="100" font-size="12" fill="#185FA5">担当：コーチ</text>
+          <circle cx="90" cy="160" r="6" fill="#0F6E56"/>
+          <rect x="120" y="139" width="540" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+          <text x="136" y="158" font-size="14" font-weight="700" fill="#085041">初回グループセッションの内容を共有</text>
+          <text x="136" y="175" font-size="12" fill="#0F6E56">担当：寉田</text>
+          <circle cx="90" cy="235" r="6" fill="#0F6E56"/>
+          <rect x="120" y="214" width="540" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+          <text x="136" y="233" font-size="14" font-weight="700" fill="#085041">初回グループセッションの内容を確認</text>
+          <text x="136" y="250" font-size="12" fill="#0F6E56">担当：専属コーチ</text>
+          <circle cx="90" cy="310" r="6" fill="#185FA5"/>
+          <rect x="120" y="289" width="540" height="44" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+          <text x="136" y="308" font-size="14" font-weight="700" fill="#0C447C">⑧ 初回セッション日程調整</text>
+          <text x="136" y="325" font-size="12" fill="#185FA5">担当：クライアント & 専属コーチ</text>
+          <circle cx="90" cy="383" r="6" fill="#185FA5"/>
+          <rect x="120" y="370" width="540" height="30" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+          <text x="136" y="389" font-size="13" font-weight="700" fill="#0C447C">⑨ 専属コーチによるセッション実施（契約期間中くり返し）</text>
+        </svg>
+      </section>
+
+      <section class="section">
+        <h2>フェーズ3：最終セッション〜アフターフォローセッション</h2>
+        <svg width="100%" viewBox="0 0 680 470" role="img" style="max-width:820px;display:block;margin:8px 0 4px;">
+          <title>最終セッションからアフターフォローセッションまでの時間軸</title>
+          <line x1="96" y1="60" x2="96" y2="432" stroke="#c9cfda" stroke-width="2"/>
+          <circle cx="96" cy="90" r="6" fill="#B91C1C"/>
+          <rect x="126" y="64" width="534" height="60" rx="8" fill="#FCEBEB" stroke="#A32D2D" stroke-width="0.5"/>
+          <text x="142" y="83" font-size="14" font-weight="700" fill="#791F1F">⑩ 最終セッション後の共有（AFS責任者へ）</text>
+          <text x="142" y="100" font-size="12" fill="#A32D2D">原則、専属コーチが最終セッションの時間内にAFSを予約する</text>
+          <text x="142" y="116" font-size="12" fill="#A32D2D">決まらなければ AFS担当者 がクライアントと日程調整</text>
+          <circle cx="96" cy="165" r="6" fill="#888780"/>
+          <rect x="126" y="149" width="534" height="44" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+          <text x="142" y="168" font-size="14" font-weight="700" fill="#2C2C2A">【AFS前】継続キャパの確認</text>
+          <text x="142" y="185" font-size="12" fill="#5F5E5A">現在の担当コーチに継続担当できるキャパがあるか確認</text>
+          <circle cx="96" cy="240" r="6" fill="#B91C1C"/>
+          <rect x="126" y="219" width="534" height="44" rx="8" fill="#FCEBEB" stroke="#A32D2D" stroke-width="0.5"/>
+          <text x="142" y="238" font-size="14" font-weight="700" fill="#791F1F">【AFS実施後】継続可否・担当コーチの確認</text>
+          <text x="142" y="255" font-size="12" fill="#A32D2D">担当：AFS担当者</text>
+          <circle cx="96" cy="315" r="6" fill="#0F6E56"/>
+          <rect x="126" y="294" width="534" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+          <text x="142" y="313" font-size="14" font-weight="700" fill="#085041">継続の確定</text>
+          <text x="142" y="330" font-size="12" fill="#0F6E56">継続する／しないを確定する</text>
+          <circle cx="96" cy="393" r="6" fill="#B91C1C"/>
+          <rect x="126" y="367" width="534" height="52" rx="8" fill="#FCEBEB" stroke="#A32D2D" stroke-width="0.5"/>
+          <text x="142" y="386" font-size="14" font-weight="700" fill="#791F1F">【継続確定後】継続プラン成約をチャットで報告</text>
+          <text x="142" y="403" font-size="12" fill="#A32D2D">AFS報告／各 Good・More 等を所定の箇所へ記載</text>
+        </svg>
+      </section>
+
+      <section class="section">
+        <h2>フェーズ4：継続後の分岐</h2>
+        <svg width="100%" viewBox="0 0 680 340" role="img" style="max-width:820px;display:block;margin:8px 0 4px;">
+          <title>継続後の分岐</title>
+          <rect x="230" y="20" width="220" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+          <text x="340" y="47" font-size="14" font-weight="700" fill="#085041" text-anchor="middle">継続確定</text>
+          <line x1="340" y1="64" x2="200" y2="100" stroke="#9aa4b2" stroke-width="1.5"/>
+          <line x1="340" y1="64" x2="480" y2="100" stroke="#9aa4b2" stroke-width="1.5"/>
+          <rect x="40" y="100" width="290" height="40" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+          <text x="185" y="125" font-size="13" font-weight="700" fill="#0C447C" text-anchor="middle">▼ 現在の担当コーチで継続</text>
+          <rect x="40" y="160" width="290" height="44" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+          <text x="185" y="179" font-size="13" font-weight="700" fill="#0C447C" text-anchor="middle">担当コーチによる追加セッション</text>
+          <text x="185" y="196" font-size="12" fill="#185FA5" text-anchor="middle">そのまま実施</text>
+          <rect x="350" y="100" width="290" height="40" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+          <text x="495" y="125" font-size="13" font-weight="700" fill="#3C3489" text-anchor="middle">▼ 別のコーチで継続</text>
+          <rect x="350" y="160" width="290" height="44" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+          <text x="495" y="179" font-size="13" font-weight="700" fill="#3C3489" text-anchor="middle">コンシェルジュ面談を実施</text>
+          <text x="495" y="196" font-size="12" fill="#534AB7" text-anchor="middle">担当：石島</text>
+          <line x1="495" y1="204" x2="495" y2="240" stroke="#9aa4b2" stroke-width="1.5"/>
+          <rect x="350" y="240" width="290" height="60" rx="8" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
+          <text x="495" y="264" font-size="13" font-weight="700" fill="#633806" text-anchor="middle">コーチ選定 → 日程調整</text>
+          <text x="495" y="285" font-size="13" font-weight="700" fill="#633806" text-anchor="middle">→ セッション開始 のフローへ</text>
+        </svg>
+        <p style="color:#5a6473;font-size:.9rem;margin-top:8px;">※ 別コーチで継続する場合は、コンシェルジュ面談のあと、フェーズ1の「⑤ コーチ選定」以降と同じ流れに接続する。</p>
+      </section>
+      <section class="section"><h2>各ステップの詳細</h2>
+      <p style="color:#5a6473;">担当・アクション・完了の定義は下の表で確認できます。</p>
+
+      <h3><span class="role-tag r-sales">営業</span>① 営業成約直後<span class="badge-red">即時（必ず遵守）</span></h3>
+      <table class="kvtable">
+        <tr><td>担当</td><td>営業マン</td></tr>
+        <tr><td>主なアクション</td><td>成約報告（着金有無含む）／受講生限定LINEへ招待／所感共有（Good / More / Next）／面談管理シート記入</td></tr>
+        <tr><td>完了の定義</td><td>1-1〜1-4 すべて完了</td></tr>
+      </table>
+
+      <h3><span class="role-tag r-sales">営業</span>② コーチマッチング部屋への共有<span class="badge-red">即時</span></h3>
+      <table class="kvtable">
+        <tr><td>担当</td><td>営業マン</td></tr>
+        <tr><td>主なアクション</td><td>① ボイスメモ ② 営業録画（Gemini議事録含む） ③ スポットコーチ訴求有無 ④ 担当スポットコーチ希望（あれば）</td></tr>
+        <tr><td>完了の定義</td><td>上記4点の投稿完了</td></tr>
+      </table>
+
+      <h3><span class="role-tag r-concierge">コンシェルジュ</span>③ コンシェルジュ面談 設定・実施<span class="badge-red">Day3まで（必ず遵守）</span></h3>
+      <table class="kvtable">
+        <tr><td>担当</td><td>石島</td></tr>
+        <tr><td>主なアクション</td><td>面談設定・実施／分野確認／実施後すぐにマッチング部屋へスレッド返信</td></tr>
+        <tr><td>完了の定義</td><td>面談実施 ＋ 分野の特定 ＋ スレ返信</td></tr>
+      </table>
+
+      <h3><span class="role-tag r-concierge">コンシェルジュ</span>④ 面談後対応（コーチ選定依頼）<span class="badge-red">面談後すぐ</span></h3>
+      <table class="kvtable">
+        <tr><td>担当</td><td>石島</td></tr>
+        <tr><td>主なアクション</td><td>コーチリーダーへメンション／分野に応じて選定依頼</td></tr>
+        <tr><td>完了の定義</td><td>メンション送信</td></tr>
+      </table>
+
+      <h3><span class="role-tag r-leader">コーチリーダー</span>⑤ コーチ選定<span class="badge-red">Day7まで（必ず遵守）</span></h3>
+      <table class="kvtable">
+        <tr><td>担当</td><td>菊地</td></tr>
+        <tr><td>期限</td><td>面談から3日以内。Day0から数えて Day7 まで</td></tr>
+        <tr><td>主なアクション</td><td>担当コーチを決定し、マッチング部屋で共有</td></tr>
+        <tr><td>完了の定義</td><td>担当コーチの投稿</td></tr>
+      </table>
+
+      <h3><span class="role-tag r-support">サポート</span>⑥ コーチLINE共有</h3>
+      <table class="kvtable">
+        <tr><td>担当</td><td>寉田</td></tr>
+        <tr><td>期限</td><td>コーチ決定後すぐ</td></tr>
+        <tr><td>主なアクション</td><td>サポートLINEでクライアントへコーチLINEを送付</td></tr>
+        <tr><td>完了の定義</td><td>送付完了</td></tr>
+      </table>
+
+      <h3><span class="role-tag r-coach">コーチ</span>⑦ 初回グループセッション実施</h3>
+      <table class="kvtable">
+        <tr><td>担当</td><td>コーチ</td></tr>
+        <tr><td>完了の定義</td><td>初回グループセッション実施完了</td></tr>
+      </table>
+
+      <h3><span class="role-tag r-support">共有</span>初回グループセッションの内容を共有・確認</h3>
+      <table class="kvtable">
+        <tr><td>共有</td><td>寉田 が初回グループセッションの内容を共有</td></tr>
+        <tr><td>確認</td><td>専属コーチ が初回グループセッションの内容を確認</td></tr>
+      </table>
+
+      <h3><span class="role-tag r-coach">コーチ</span>⑧ 初回セッション日程調整</h3>
+      <table class="kvtable">
+        <tr><td>担当</td><td>クライアント & 専属コーチ</td></tr>
+        <tr><td>主なアクション</td><td>LINE上で初回日程を調整</td></tr>
+        <tr><td>完了の定義</td><td>初回日程の確定</td></tr>
+      </table>
+
+      <h3><span class="role-tag r-coach">コーチ</span>⑨ 専属コーチによるセッション実施</h3>
+      <table class="kvtable">
+        <tr><td>担当</td><td>専属コーチ</td></tr>
+        <tr><td>主なアクション</td><td>通常セッションを実施（契約期間中、繰り返し）</td></tr>
+        <tr><td>完了の定義</td><td>最終セッション実施完了</td></tr>
+      </table>
+
+      <h3><span class="role-tag r-coach">コーチ</span>⑩ 最終セッション後の共有（AFS責任者へ）</h3>
+      <table class="kvtable">
+        <tr><td>担当</td><td>専属コーチ ／ AFS担当者</td></tr>
+        <tr><td>主なアクション</td><td>原則、専属コーチが最終セッションの面談時間内にアフターフォローセッション（AFS）を予約する。<br>最終セッション内で予約が決まらなかった場合は、AFS担当者がクライアントと日程調整を行う。</td></tr>
+        <tr><td>完了の定義</td><td>AFSの予約または日程調整の完了</td></tr>
+      </table>
+
+      <h3><span class="role-tag r-afs">AFS</span>【AFS前】継続キャパの確認</h3>
+      <table class="kvtable">
+        <tr><td>主なアクション</td><td>現在の担当コーチに、継続担当できるキャパシティがあるか確認する</td></tr>
+      </table>
+
+      <h3><span class="role-tag r-afs">AFS</span>【AFS実施後】継続可否・担当コーチの確認</h3>
+      <table class="kvtable">
+        <tr><td>担当</td><td>AFS担当者</td></tr>
+        <tr><td>主なアクション</td><td>継続可否の確認／担当コーチの確認</td></tr>
+      </table>
+
+      <h3><span class="role-tag r-afs">AFS</span>継続の確定</h3>
+      <table class="kvtable">
+        <tr><td>内容</td><td>継続する／しないを確定する</td></tr>
+      </table>
+
+      <h3><span class="role-tag r-afs">AFS</span>【継続確定後】継続プラン成約をチャットで報告</h3>
+      <table class="kvtable">
+        <tr><td>主なアクション</td><td>アフターフォローセッション報告／各 Good・More 等を所定の箇所へ記載</td></tr>
+        <tr><td>完了の定義</td><td>チャット報告完了</td></tr>
+      </table>
+
+      <h3>継続後の分岐</h3>
+      <table class="kvtable">
+        <tr><td>現在の担当コーチで継続</td><td>そのまま担当コーチによる追加セッションを実施</td></tr>
+        <tr><td>別のコーチで継続</td><td>コンシェルジュ面談を実施 → その後、既存の「コーチ選定 → 日程調整 → セッション開始」のフローへ接続</td></tr>
+      </table>
+      </section>
+
+      <section class="section" id="roles">
+        <h2>担当者早見表</h2>
+        <table class="kvtable" style="max-width:none;">
+          <tr><th>役割</th><th>担当</th><th>主な守備範囲</th></tr>
+          <tr><td>営業</td><td>営業マン</td><td>成約直後の報告・マッチング部屋への共有（①②）</td></tr>
+          <tr><td>コンシェルジュ</td><td>石島</td><td>コンシェルジュ面談・分野確認・コーチ選定依頼（③④／別コーチ継続時）</td></tr>
+          <tr><td>コーチリーダー</td><td>菊地</td><td>担当コーチの選定（⑤）</td></tr>
+          <tr><td>サポート・共有</td><td>寉田</td><td>コーチLINE共有（⑥）・初回グループセッション内容の共有</td></tr>
+          <tr><td>コーチ</td><td>専属コーチ</td><td>初回グループ／セッション実施・最終共有・追加セッション（⑦⑨⑩）</td></tr>
+          <tr><td>AFS</td><td>AFS責任者／AFS担当者</td><td>AFS日程調整・継続キャパ確認・継続可否判断・継続報告</td></tr>
+        </table>
+      </section>
+
+      <div class="next-steps">
+        <a href="01-potex.html">01 POTEXとは へ進む →</a>
+      </div>
+      <footer class="footer">
+        <p>POTEXマニュアル｜社外秘</p>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
